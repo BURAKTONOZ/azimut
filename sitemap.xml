@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://buraktonoz.com/azimut/</loc>
-    <lastmod>2026-11-01T19:05:58.601Z</lastmod>
+    <lastmod>2026-11-01T22:57:00.588Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,12 +13,22 @@
   </url>
   <url>
     <loc>https://buraktonoz.com/azimut/tanitim.html</loc>
-    <lastmod>2026-11-01T19:05:58.601Z</lastmod>
+    <lastmod>2026-11-01T22:57:00.588Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://buraktonoz.com/azimut/ek2.png</image:loc>
       <image:title>TKGM Tüm Parselleri Görme ve MAKS Sınır Çizimi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buraktonoz.com/azimut/tanitim.html?makale=qgis-ve-arcgisten-mobil-sahaya-veri-aktarimi-tkgm-parsel-itrf96-ve-maks-ile-jk2y</loc>
+    <lastmod>2026-11-01T22:56:59.273Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:title>QGIS ve ArcGIS&apos;ten Mobil Sahaya Veri Aktarımı: TKGM Parsel, ITRF96 ve MAKS ile Aplikasyon Rehberi</image:title>
     </image:image>
   </url>
   <url>
