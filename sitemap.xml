@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://buraktonoz.com/azimut/</loc>
-    <lastmod>2026-10-31T22:39:15.581Z</lastmod>
+    <lastmod>2026-11-01T11:24:55.250Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://buraktonoz.com/azimut/tanitim.html</loc>
-    <lastmod>2026-10-31T22:39:15.581Z</lastmod>
+    <lastmod>2026-11-01T11:24:55.250Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -22,12 +22,22 @@
     </image:image>
   </url>
   <url>
+    <loc>https://buraktonoz.com/azimut/tanitim.html?makale=orman-arazilerinde-hassas-aplikasyon-azimut-pro-ile-sesli-ve-pusulali-canli-tj8s</loc>
+    <lastmod>2026-11-01T11:24:54.352Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:title>Orman Arazilerinde Hassas Aplikasyon: AZİMUT Pro ile Sesli ve Pusulalı Canlı Stakeout Radarı ve TKGM Parsel Taşına Sıfırlama</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://buraktonoz.com/azimut/tanitim.html?makale=ziraat-muhendisleri-ve-buyuk-ciftciler-icin-dogru-projeksiyon-itrf96-tkgm-p-gvru</loc>
     <lastmod>2026-10-31T22:39:14.423Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:loc>https://img.kwcdn.com/product/fancy/0efadd30-86ac-47c4-91a9-591f2fb23ad2.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp</image:loc>
       <image:title>Ziraat Mühendisleri ve Büyük Çiftçiler İçin Doğru Projeksiyon: ITRF96, TKGM Parsel ve Aplikasyon Hatalarını Önleme Rehberi</image:title>
     </image:image>
   </url>
@@ -37,7 +47,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:loc>https://www.dehadedektor.com.tr/idea/by/56/myassets/blogs/blog-77.jpg?revision=1791980855</image:loc>
       <image:title>Su Ürünleri Avlak Sahaları ve Göl İçi Yasak Bölge Sınırlarının Koordinatlarla Kontrolü: TKGM, ITRF96 ve AZİMUT Pro ile Hassas Aplikasyon</image:title>
     </image:image>
   </url>
@@ -47,7 +57,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:loc>https://www.fuzultopraktan.com.tr/assets/images/uploads/blogs/69440cc385afc.png</image:loc>
       <image:title>Çıkmaz Parsellerde Geçit Hakkı Güzergahı Belirleme: TKGM, ITRF96, Aplikasyon ve AZİMUT Pro ile Saha Çözümleri</image:title>
     </image:image>
   </url>
