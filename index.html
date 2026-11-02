@@ -1264,23 +1264,26 @@
         }
         .network-user-card {
             background: var(--card-bg); border: 1px solid var(--border-light);
-            border-radius: 16px; padding: 12px; margin-bottom: 10px;
-            display: flex; align-items: center; justify-content: space-between; gap: 11px;
+            border-radius: 16px; padding: 13px; margin-bottom: 11px;
+            display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 10px;
             transition: border-color 0.2s;
         }
         .network-user-card.is-me {
             border-color: rgba(0, 229, 255, 0.45);
             background: linear-gradient(135deg, rgba(0, 229, 255, 0.08), rgba(59, 130, 246, 0.04));
         }
+        .network-user-top-row {
+            display: flex; align-items: flex-start; justify-content: space-between; gap: 11px; width: 100%;
+        }
         .network-user-left {
-            display: flex; align-items: center; gap: 11px; flex: 1; min-width: 0;
+            display: flex; align-items: flex-start; gap: 11px; flex: 1; min-width: 0;
         }
         .network-avatar {
             width: 48px; height: 48px; border-radius: 50%; object-fit: cover;
             border: 2px solid var(--accent); flex-shrink: 0; background: var(--surface-solid);
         }
         .network-user-meta {
-            flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px;
+            flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px;
         }
         .network-user-name {
             font-size: 0.9rem; font-weight: 800; color: var(--text-main);
@@ -1306,13 +1309,17 @@
             white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
         }
         .network-user-actions {
-            display: flex; flex-direction: column; gap: 5px; flex-shrink: 0;
+            display: flex; flex-direction: row; flex-wrap: wrap; gap: 7px; width: 100%;
+            padding-top: 6px; border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .network-user-actions > * {
+            flex: 1 1 auto; min-width: 115px;
         }
         .btn-send-mail {
             background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
             color: #000; border: none; border-radius: 10px;
             padding: 8px 11px; font-family: 'Inter', sans-serif;
-            font-size: 0.74rem; font-weight: 800; cursor: pointer;
+            font-size: 0.73rem; font-weight: 800; cursor: pointer;
             display: inline-flex; align-items: center; justify-content: center; gap: 5px;
             text-decoration: none; white-space: nowrap;
             box-shadow: 0 4px 12px rgba(0, 229, 255, 0.22);
@@ -1320,9 +1327,28 @@
         .btn-send-mail:active { transform: scale(0.95); }
         .btn-copy-mail {
             background: var(--input-bg); color: var(--text-muted);
-            border: 1px solid var(--border-light); border-radius: 8px;
-            padding: 5px 8px; font-size: 0.65rem; font-weight: 600;
-            cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 4px;
+            border: 1px solid var(--border-light); border-radius: 10px;
+            padding: 8px 10px; font-size: 0.7rem; font-weight: 700;
+            cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 5px;
+            white-space: nowrap;
+        }
+        .network-admin-panel-box {
+            width: 100%; margin-top: 2px; padding: 9px 10px;
+            background: rgba(245, 158, 11, 0.07);
+            border: 1px solid rgba(245, 158, 11, 0.35);
+            border-radius: 12px;
+            display: flex; flex-direction: column; gap: 7px;
+        }
+        .network-admin-header {
+            display: flex; align-items: center; justify-content: space-between; gap: 6px; flex-wrap: wrap;
+            font-size: 0.66rem; font-weight: 800; color: #fde68a;
+        }
+        .network-admin-btn-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; width: 100%;
+        }
+        .network-admin-quota-row {
+            display: flex; align-items: center; justify-content: space-between; gap: 5px; flex-wrap: wrap;
+            padding-top: 5px; border-top: 1px dashed rgba(245, 158, 11, 0.25);
         }
 
         /* Profil & Araçlar Sayfası Özel */
@@ -1772,10 +1798,10 @@
         /* HUD Üst Demo / Üyelik Durum Çubuğu */
         .hud-membership-strip {
             display: flex; align-items: center; justify-content: space-between; gap: 6px;
-            padding: 4px 10px;
-            background: rgba(2, 8, 20, 0.72);
+            padding: 5px 10px;
+            background: rgba(2, 8, 20, 0.82);
             border-top: 1px solid var(--border-light);
-            font-size: 0.64rem; font-weight: 700;
+            font-size: 0.65rem; font-weight: 700;
             cursor: pointer;
         }
         .hud-demo-timer-pill {
@@ -1783,24 +1809,38 @@
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.64rem; font-weight: 800;
             color: var(--accent);
-            background: rgba(0, 229, 255, 0.12);
-            border: 1px solid rgba(0, 229, 255, 0.35);
+            background: rgba(0, 229, 255, 0.14);
+            border: 1px solid rgba(0, 229, 255, 0.42);
             padding: 2px 8px; border-radius: 12px;
+            white-space: nowrap; flex-shrink: 0;
         }
         .hud-demo-timer-pill.expired {
             color: var(--warning);
-            background: rgba(245, 158, 11, 0.16);
-            border-color: rgba(245, 158, 11, 0.45);
+            background: rgba(245, 158, 11, 0.18);
+            border-color: rgba(245, 158, 11, 0.5);
         }
-        .hud-demo-timer-pill.active-perm {
+        .hud-demo-timer-pill.active-perm, .hud-demo-timer-pill.active-pill {
             color: var(--success);
-            background: rgba(16, 185, 129, 0.15);
-            border-color: rgba(16, 185, 129, 0.4);
+            background: rgba(16, 185, 129, 0.16);
+            border-color: rgba(16, 185, 129, 0.45);
         }
         .hud-demo-timer-pill.admin-perm {
             color: #fde68a;
-            background: rgba(245, 158, 11, 0.22);
-            border-color: rgba(245, 158, 11, 0.55);
+            background: rgba(245, 158, 11, 0.24);
+            border-color: rgba(245, 158, 11, 0.6);
+        }
+        .splash-auth-status-banner {
+            width: 100%;
+            background: rgba(16, 185, 129, 0.12);
+            border: 1px solid rgba(16, 185, 129, 0.42);
+            border-radius: 12px;
+            padding: 9px 12px;
+            font-size: 0.74rem;
+            color: #ecfdf5;
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            text-align: left;
         }
 
         /* Admin Yönetim Paneli Kartları */
@@ -1823,8 +1863,8 @@
             background: var(--card-bg);
             border: 1px solid var(--border-light);
             border-radius: 14px;
-            padding: 12px;
-            margin-bottom: 10px;
+            padding: 13px;
+            margin-bottom: 11px;
             display: flex; flex-direction: column; gap: 9px;
         }
         .admin-user-ctrl-card.is-active-card {
@@ -1833,43 +1873,55 @@
         .admin-user-ctrl-card.is-passive-card {
             border-color: rgba(245, 158, 11, 0.4);
         }
-        .admin-ctrl-grid {
-            display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px;
+        .admin-user-ctrl-top {
+            display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; width: 100%;
+        }
+        .admin-user-ctrl-info {
+            display: flex; align-items: flex-start; gap: 10px; flex: 1; min-width: 0;
+        }
+        .admin-ctrl-grid, .admin-ctrl-actions-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; width: 100%;
         }
         .admin-ctrl-btn {
-            padding: 7px 8px; border-radius: 8px;
-            font-family: 'Inter', sans-serif; font-size: 0.69rem; font-weight: 800;
+            padding: 8px 9px; border-radius: 9px;
+            font-family: 'Inter', sans-serif; font-size: 0.7rem; font-weight: 800;
             cursor: pointer; border: 1px solid var(--border-light);
             background: var(--input-bg); color: var(--text-main);
             display: inline-flex; align-items: center; justify-content: center; gap: 5px;
-            transition: 0.15s;
+            transition: 0.15s; white-space: nowrap;
         }
         .admin-ctrl-btn:active { transform: scale(0.96); }
-        .admin-ctrl-btn.btn-make-active {
+        .admin-ctrl-btn.btn-make-active, .admin-ctrl-btn.make-active {
             background: rgba(16, 185, 129, 0.18); color: var(--success); border-color: rgba(16, 185, 129, 0.45);
         }
-        .admin-ctrl-btn.btn-make-passive {
+        .admin-ctrl-btn.btn-make-passive, .admin-ctrl-btn.make-passive {
             background: rgba(239, 68, 68, 0.16); color: #fca5a5; border-color: rgba(239, 68, 68, 0.42);
         }
-        .admin-ctrl-btn.btn-demo-reset {
+        .admin-ctrl-btn.btn-demo-reset, .admin-ctrl-btn.demo-reset {
             background: rgba(0, 229, 255, 0.15); color: var(--accent); border-color: rgba(0, 229, 255, 0.42);
         }
-        .admin-ctrl-btn.btn-demo-stop {
+        .admin-ctrl-btn.btn-demo-stop, .admin-ctrl-btn.demo-stop {
             background: rgba(245, 158, 11, 0.16); color: var(--warning); border-color: rgba(245, 158, 11, 0.42);
         }
-        .admin-quota-bar {
-            display: flex; align-items: center; justify-content: space-between; gap: 5px; flex-wrap: wrap;
-            background: rgba(0, 0, 0, 0.28); border: 1px solid var(--border-light);
-            border-radius: 10px; padding: 6px 8px;
-        }
-        .admin-q-chip {
-            padding: 5px 8px; border-radius: 7px;
+        .admin-ctrl-btn.quota-btn, .admin-q-chip {
+            padding: 6px 8px; border-radius: 7px;
             font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; font-weight: 800;
-            border: 1px solid rgba(0, 229, 255, 0.35);
-            background: rgba(0, 229, 255, 0.12); color: var(--accent);
+            border: 1px solid rgba(139, 92, 246, 0.45);
+            background: rgba(139, 92, 246, 0.16); color: #ddd6fe;
             cursor: pointer;
         }
-        .admin-q-chip:active { transform: scale(0.94); }
+        .admin-ctrl-btn.quota-btn:active, .admin-q-chip:active { transform: scale(0.94); }
+        .admin-quota-bar {
+            display: flex; align-items: center; justify-content: space-between; gap: 7px; flex-wrap: wrap;
+            background: rgba(0, 0, 0, 0.28); border: 1px solid var(--border-light);
+            border-radius: 10px; padding: 8px 10px;
+        }
+        .admin-quota-label {
+            font-size: 0.68rem; font-weight: 800; color: #ddd6fe;
+        }
+        .admin-quota-controls {
+            display: flex; align-items: center; gap: 5px; flex-wrap: wrap;
+        }
 
         /* KVKK Kartı ve Bölüm Stilleri */
         .kvkk-status-card {
@@ -1926,7 +1978,7 @@
         </a>
     </div>
 
-    <!-- v11: SİYAH LOGO İLE ZEMİN BÜTÜNLEŞİK KARŞILAMA EKRANI (ZORUNLU GİRİŞ KİLİDİ YOKTUR, HARİTA DOĞRUDAN AÇILIR) -->
+    <!-- v11: SİYAH LOGO İLE ZEMİN BÜTÜNLEŞİK KARŞILAMA EKRANI (OTOMATİK ATLAMAZ, KULLANICI KENDİ SEÇER) -->
     <div id="splash-screen">
         <div class="auth-gate-wrap">
             <div class="splash-logo-stage">
@@ -1934,14 +1986,17 @@
             </div>
             <div class="splash-badge-pill"><span>PRO</span> • JEODEZİK ARAZİ & KURUMSAL AĞ SİSTEMİ v11.0</div>
 
-            <!-- ADIM 1: DOĞRUDAN HARİTAYI AÇMA VEYA İSTEĞE BAĞLI GMAIL GİRİŞ KARTI -->
+            <!-- ADIM 1: DOĞRUDAN HARİTAYI AÇMA VEYA İSTEĞE BAĞLI GMAIL GİRİŞ KARTI (KULLANICI SEÇİMİYLE GEÇİLİR) -->
             <div class="auth-gate-card" id="auth-gate-step-login">
                 <h2 class="auth-gate-title"><i class="fas fa-satellite-dish" style="color:var(--accent);"></i> AZİMUT Pro Saha Terminali</h2>
-                <p class="auth-gate-sub">Harita ve katmanları doğrudan görüntüleyebilirsiniz. Nokta ekleme/kaydetme, TKGM sorgulama, <b>3 Günlük Demo</b> ve <b>AZİMUT Ağı</b> için Gmail ile giriş yapabilirsiniz.</p>
+                <p class="auth-gate-sub" id="splash-gate-subtitle">Harita ve katmanları doğrudan görüntüleyebilirsiniz veya tüm mühendislik özellikleri, <b>3 Günlük Demo</b> ve <b>AZİMUT Ağı</b> için Gmail ile giriş yapabilirsiniz. Lütfen devam şeklini seçin:</p>
 
-                <button type="button" class="splash-enter-map-btn" onclick="dismissSplashAndEnterMap()">
+                <!-- Oturum açıksa giriş ekranında kimin giriş yaptığını ve durumunu gösteren canlı bilgi kutusu -->
+                <div id="splash-auth-status-banner" class="splash-auth-status-banner"></div>
+
+                <button type="button" class="splash-enter-map-btn" id="btn-splash-enter-map" onclick="dismissSplashAndEnterMap()">
                     <i class="fas fa-map-marked-alt"></i>
-                    <span>Haritayı Aç ve Başla</span>
+                    <span id="splash-enter-btn-text">Haritayı Aç ve Başla</span>
                 </button>
 
                 <button type="button" class="splash-sub-login-btn" id="btn-gate-google-login" onclick="loginWithGoogle()">
@@ -3680,21 +3735,116 @@
         }
         loadCachedNetworkMap();
 
-        // Canlı 3 Günlük Demo Sayacı (Saniyede bir HUD barı, Yan Menü ve Profil ekranındaki sayacı günceller)
+        // Giriş ekranındaki (Splash Screen) oturum ve demo durum kutusunu günceller (Otomatik atlamaz, kullanıcı seçer)
+        function updateSplashScreenAuthUI() {
+            const splashBanner = document.getElementById('splash-auth-status-banner');
+            const enterBtnText = document.getElementById('splash-enter-btn-text');
+            const googleBtnText = document.getElementById('gate-login-btn-text');
+            const googleBtnEl = document.getElementById('btn-gate-google-login');
+            if (!splashBanner) return;
+
+            if (!auth.currentUser) {
+                splashBanner.style.display = 'none';
+                splashBanner.innerHTML = '';
+                if (enterBtnText) enterBtnText.innerText = 'Haritayı Aç ve Başla (Misafir Görünümü)';
+                if (googleBtnText) googleBtnText.innerText = 'Gmail ile Giriş Yap (3 Gün Demo / Üye Girişi)';
+                if (googleBtnEl) googleBtnEl.disabled = false;
+                return;
+            }
+
+            const p = currentUserProfile;
+            const uEmail = normalizeEmail(p.email || auth.currentUser.email || '');
+            const uName = escapeHtmlSafe(p.fullName || auth.currentUser.displayName || uEmail || 'Kullanıcı');
+            const isAdmin = isMainAdminEmail(uEmail);
+            const isActive = Boolean(p.isActive || isAdmin);
+            const isDemo = isUserDemoActive(p);
+            const demoRemText = formatDemoRemaining(p.demoExpiresAt, p.demoDisabledByAdmin);
+
+            splashBanner.style.display = 'flex';
+            if (isAdmin) {
+                splashBanner.style.background = 'rgba(245, 158, 11, 0.16)';
+                splashBanner.style.borderColor = 'rgba(245, 158, 11, 0.55)';
+                splashBanner.innerHTML = `
+                    <div style="font-weight:800; color:#fde68a;"><i class="fas fa-crown"></i> Oturum Açık: ${uName} (ANA YÖNETİCİ / ADMİN)</div>
+                    <div style="font-size:0.68rem; color:#fef3c7;">${escapeHtmlSafe(uEmail)} • Tüm Sistem, Referans ve Demo Kontrolleri Aktif</div>
+                `;
+            } else if (isActive) {
+                splashBanner.style.background = 'rgba(16, 185, 129, 0.14)';
+                splashBanner.style.borderColor = 'rgba(16, 185, 129, 0.48)';
+                splashBanner.innerHTML = `
+                    <div style="font-weight:800; color:#6ee7b7;"><i class="fas fa-check-circle"></i> Oturum Açık: ${uName} (AKTİF KULLANICI)</div>
+                    <div style="font-size:0.68rem; color:#d1fae5;">${escapeHtmlSafe(uEmail)} • Tüm Mühendislik Özellikleri Sınırsız Açık</div>
+                `;
+            } else if (isDemo) {
+                splashBanner.style.background = 'rgba(0, 229, 255, 0.13)';
+                splashBanner.style.borderColor = 'rgba(0, 229, 255, 0.48)';
+                splashBanner.innerHTML = `
+                    <div style="font-weight:800; color:#7dd3fc;"><i class="fas fa-hourglass-half"></i> Oturum Açık: ${uName} (3 GÜNLÜK DEMO KULLANIMI)</div>
+                    <div style="font-size:0.68rem; color:#e0f2fe;">${escapeHtmlSafe(uEmail)} • Kalan Demo Süresi: <b>${escapeHtmlSafe(demoRemText)}</b></div>
+                `;
+            } else {
+                splashBanner.style.background = 'rgba(239, 68, 68, 0.14)';
+                splashBanner.style.borderColor = 'rgba(239, 68, 68, 0.45)';
+                splashBanner.innerHTML = `
+                    <div style="font-weight:800; color:#fca5a5;"><i class="fas fa-user-lock"></i> Oturum Açık: ${uName} (PASİF KULLANICI)</div>
+                    <div style="font-size:0.68rem; color:#fee2e2;">${escapeHtmlSafe(uEmail)} • 3 Günlük Demo Süresi Doldu (Referans / Aktivasyon Gerekli)</div>
+                `;
+            }
+
+            if (enterBtnText) enterBtnText.innerText = 'Haritayı Aç ve Başla';
+            if (googleBtnText) googleBtnText.innerText = 'Farklı Gmail Hesabı İle Giriş Yap';
+            if (googleBtnEl) googleBtnEl.disabled = false;
+        }
+
+        // Admin Paneli ve AZİMUT Ağı içerisindeki tüm kullanıcı kartlarının "Kalan 3 Günlük Demo Süresi" etiketlerini saniyede bir canlı günceller
+        function updateLiveAdminAndNetworkDemoTimers() {
+            const liveNodes = document.querySelectorAll('[data-demo-uid]');
+            if (!liveNodes || liveNodes.length === 0) return;
+            liveNodes.forEach(node => {
+                const uid = node.getAttribute('data-demo-uid');
+                if (!uid) return;
+                const u = azimutNetworkUsersMap[uid];
+                if (!u) return;
+                const isUserAdmin = isMainAdminEmail(u.email);
+                const isActive = Boolean(u.isActive || isUserAdmin);
+                const isDemo = isUserDemoActive(u);
+                if (isUserAdmin) {
+                    node.style.color = '#fde68a';
+                    node.innerText = 'Süresiz (Ana Admin)';
+                } else if (isActive) {
+                    const hasDemoTime = u.demoExpiresAt && Number(u.demoExpiresAt) > Date.now() && !u.demoDisabledByAdmin;
+                    node.style.color = '#34d399';
+                    node.innerText = hasDemoTime
+                        ? `Aktif Üye (Demo: ${formatDemoRemaining(u.demoExpiresAt, u.demoDisabledByAdmin)})`
+                        : 'Tam Aktif Üye (Süresiz)';
+                } else if (isDemo) {
+                    node.style.color = '#7dd3fc';
+                    node.innerText = `Kalan: ${formatDemoRemaining(u.demoExpiresAt, u.demoDisabledByAdmin)}`;
+                } else {
+                    node.style.color = '#fca5a5';
+                    node.innerText = formatDemoRemaining(u.demoExpiresAt, u.demoDisabledByAdmin);
+                }
+            });
+        }
+
+        // Canlı 3 Günlük Demo Sayacı (Saniyede bir Ana Koordinat Altı HUD Barı, Yan Menü, Profil, Giriş Ekranı ve Admin/Ağ kartlarını günceller)
         function updateLiveDemoCountdownElements() {
             const hudStrip = document.getElementById('hud-membership-strip');
-            const hudStatusLabel = document.getElementById('hud-member-status-label');
+            const hudStatusLabel = document.getElementById('hud-status-left-text') || document.getElementById('hud-member-status-label');
             const hudTimerPill = document.getElementById('hud-demo-countdown-pill');
-            const dTimerRow = document.getElementById('drawer-demo-timer-row');
-            const dTimerText = document.getElementById('drawer-demo-countdown-text');
-            const pTimerBox = document.getElementById('profile-demo-timer-box');
-            const pTimerText = document.getElementById('profile-demo-countdown-text');
+            const dTimerRow = document.getElementById('drawer-demo-timer-row') || document.getElementById('drawer-demo-countdown-bar');
+            const dTimerText = document.getElementById('drawer-demo-countdown-text') || document.getElementById('drawer-demo-timer-val');
+            const pTimerBox = document.getElementById('profile-demo-timer-box') || document.getElementById('profile-demo-countdown-bar');
+            const pTimerText = document.getElementById('profile-demo-countdown-text') || document.getElementById('profile-demo-timer-val');
+
+            updateSplashScreenAuthUI();
+            updateLiveAdminAndNetworkDemoTimers();
 
             if (!auth.currentUser) {
                 // Giriş yapmamış (Misafir) kullanıcı
                 if (hudStrip) hudStrip.style.display = 'flex';
                 if (hudStatusLabel) {
-                    hudStatusLabel.innerHTML = `<i class="fas fa-user-clock" style="color:#cbd5e1;"></i> <span style="color:#cbd5e1;">MİSAFİR MODU (Sorgu & Kayıt İçin Giriş Yapın)</span>`;
+                    hudStatusLabel.innerHTML = `<i class="fas fa-eye" style="color:var(--accent);"></i> <span style="color:#e2e8f0;">MİSAFİR HARİTA GÖRÜNÜMÜ (Giriş Yapılmadı)</span>`;
                 }
                 if (hudTimerPill) {
                     hudTimerPill.className = 'hud-demo-timer-pill';
@@ -3713,11 +3863,11 @@
             if (isAdmin) {
                 if (hudStrip) hudStrip.style.display = 'flex';
                 if (hudStatusLabel) {
-                    hudStatusLabel.innerHTML = `<i class="fas fa-crown" style="color:#fbbf24;"></i> <span style="color:#fde68a;">ANA YÖNETİCİ (ADMİN) • TAM YETKİ</span>`;
+                    hudStatusLabel.innerHTML = `<i class="fas fa-crown" style="color:#fbbf24;"></i> <span style="color:#fde68a;">ANA YÖNETİCİ (ADMİN) • TAM YETKİ AÇIK</span>`;
                 }
                 if (hudTimerPill) {
-                    hudTimerPill.className = 'hud-demo-timer-pill active-pill';
-                    hudTimerPill.innerHTML = `<i class="fas fa-user-shield"></i> Admin Paneli`;
+                    hudTimerPill.className = 'hud-demo-timer-pill admin-perm';
+                    hudTimerPill.innerHTML = `<i class="fas fa-sliders-h"></i> Admin Kontrol Paneli`;
                 }
                 if (dTimerRow) dTimerRow.style.display = 'none';
                 if (pTimerBox) pTimerBox.style.display = 'none';
@@ -3726,13 +3876,15 @@
             }
 
             if (isActive) {
+                const remQ = Math.max(0, Number(p.remainingReferrals || 0));
+                const totQ = Math.max(0, Number(p.referralQuota || 0));
                 if (hudStrip) hudStrip.style.display = 'flex';
                 if (hudStatusLabel) {
-                    hudStatusLabel.innerHTML = `<i class="fas fa-check-circle" style="color:#34d399;"></i> <span style="color:#6ee7b7;">AKTİF KULLANICI (${p.remainingReferrals || 0}/${p.referralQuota || 0} Ref. Hakkı)</span>`;
+                    hudStatusLabel.innerHTML = `<i class="fas fa-check-circle" style="color:#34d399;"></i> <span style="color:#6ee7b7;">AKTİF KULLANICI • TÜM ÖZELLİKLER AÇIK (Ref: ${remQ}/${totQ})</span>`;
                 }
                 if (hudTimerPill) {
-                    hudTimerPill.className = 'hud-demo-timer-pill active-pill';
-                    hudTimerPill.innerHTML = `<i class="fas fa-unlock"></i> Sınırsız Açık`;
+                    hudTimerPill.className = 'hud-demo-timer-pill active-perm';
+                    hudTimerPill.innerHTML = `<i class="fas fa-unlock"></i> Sınırsız Erişim`;
                 }
                 if (dTimerRow) dTimerRow.style.display = 'none';
                 if (pTimerBox) pTimerBox.style.display = 'none';
@@ -3740,7 +3892,7 @@
                 return;
             }
 
-            // Pasif Kullanıcı: Demo Süresi Devam Ediyor mu yoksa Doldu mu?
+            // Pasif Kullanıcı: 3 Günlük Demo Süresi Devam Ediyor mu yoksa Doldu mu?
             const timeStr = formatDemoRemaining(p.demoExpiresAt, p.demoDisabledByAdmin);
             if (hudStrip) hudStrip.style.display = 'flex';
             if (dTimerRow) dTimerRow.style.display = 'flex';
@@ -3749,11 +3901,11 @@
             if (demoActive) {
                 wasDemoActiveLastTick = true;
                 if (hudStatusLabel) {
-                    hudStatusLabel.innerHTML = `<i class="fas fa-hourglass-half" style="color:#38bdf8;"></i> <span style="color:#bae6fd;">PASİF (3 GÜNLÜK DEMO AÇIK)</span>`;
+                    hudStatusLabel.innerHTML = `<i class="fas fa-hourglass-half" style="color:#38bdf8;"></i> <span style="color:#bae6fd;">3 GÜNLÜK DEMO KULLANIMI AKTİF (Tüm Özellikler Açık)</span>`;
                 }
                 if (hudTimerPill) {
                     hudTimerPill.className = 'hud-demo-timer-pill';
-                    hudTimerPill.innerHTML = `<i class="fas fa-stopwatch"></i> ${timeStr}`;
+                    hudTimerPill.innerHTML = `<i class="fas fa-stopwatch"></i> Kalan: ${timeStr}`;
                 }
                 if (dTimerText) {
                     dTimerText.style.color = '#7dd3fc';
@@ -3771,11 +3923,11 @@
                     showPassiveWallModal("3 Günlük Demo Süreniz Sona Erdi");
                 }
                 if (hudStatusLabel) {
-                    hudStatusLabel.innerHTML = `<i class="fas fa-user-lock" style="color:#f87171;"></i> <span style="color:#fca5a5;">PASİF KULLANICI (DEMO SÜRESİ DOLDU)</span>`;
+                    hudStatusLabel.innerHTML = `<i class="fas fa-user-lock" style="color:#f87171;"></i> <span style="color:#fca5a5;">PASİF KULLANICI (3 GÜNLÜK DEMO SÜRESİ DOLDU)</span>`;
                 }
                 if (hudTimerPill) {
                     hudTimerPill.className = 'hud-demo-timer-pill expired';
-                    hudTimerPill.innerHTML = `<i class="fas fa-lock"></i> Demo Bitti`;
+                    hudTimerPill.innerHTML = `<i class="fas fa-lock"></i> Aktivasyon Gerekli`;
                 }
                 if (dTimerText) {
                     dTimerText.style.color = '#fca5a5';
@@ -4006,17 +4158,17 @@
 
             // Admin butonlarını SADECE buraktonoz@gmail.com için göster
             const dAdminBtn = document.getElementById('drawer-admin-panel-btn');
-            const pAdminBtn = document.getElementById('profile-admin-open-btn');
-            const nAdminBtn = document.getElementById('net-admin-open-btn');
+            const pAdminBtn = document.getElementById('profile-admin-panel-btn') || document.getElementById('profile-admin-open-btn');
+            const nAdminBtn = document.getElementById('network-admin-panel-btn') || document.getElementById('net-admin-open-btn');
             if (dAdminBtn) dAdminBtn.style.display = isAdmin ? 'flex' : 'none';
             if (pAdminBtn) pAdminBtn.style.display = isAdmin ? 'flex' : 'none';
-            if (nAdminBtn) nAdminBtn.style.display = isAdmin ? 'flex' : 'none';
+            if (nAdminBtn) nAdminBtn.style.display = isAdmin ? 'inline-flex' : 'none';
 
             // Misafir/Üye buton görünümleri (Side Drawer)
             const dGuestLoginBtn = document.getElementById('drawer-guest-login-btn');
-            const dEditBtn = document.getElementById('drawer-btn-edit-profile');
+            const dLoggedInActions = document.getElementById('drawer-logged-in-actions') || document.getElementById('drawer-btn-edit-profile');
             if (dGuestLoginBtn) dGuestLoginBtn.style.display = isLoggedIn ? 'none' : 'flex';
-            if (dEditBtn) dEditBtn.style.display = isLoggedIn ? 'flex' : 'none';
+            if (dLoggedInActions) dLoggedInActions.style.display = isLoggedIn ? 'grid' : 'none';
 
             // 1. Sol Açılır Yan Panel (Side Drawer)
             setAvatarWithFallback(document.getElementById('drawer-user-photo'), isLoggedIn ? p.photoURL : '', isLoggedIn ? displayName : 'AZ');
@@ -4512,7 +4664,6 @@
                     updatedAt: Date.now()
                 };
                 db.collection('azimut_network').doc(targetUserEntry.uid).set(activationPayload, { merge: true }).catch(() => {});
-                db.collection('users').doc(targetUserEntry.uid).set(activationPayload, { merge: true }).catch(() => {});
             }
 
             if (isAdminAction) {
@@ -4551,7 +4702,7 @@
         // --- MİSAFİR KULLANICI GİRİŞ İSTEMİ MODALI & PASİF KULLANICI MODALI ---
         function showGuestLoginModal(featureTitle = '') {
             const overlay = document.getElementById('guest-login-overlay');
-            const featBadge = document.getElementById('guest-login-feature-name');
+            const featBadge = document.getElementById('guest-login-feature-badge') || document.getElementById('guest-login-feature-name');
             if (featBadge) {
                 featBadge.innerHTML = `<i class="fas fa-lock"></i> GİRİŞ GEREKTİREN ÖZELLİK: ${escapeHtmlSafe(featureTitle || 'Üye Girişi Gereklidir')}`;
             }
@@ -4642,6 +4793,10 @@
             } else {
                 showPassiveWallModal("Pasif Kullanıcı — 3 Günlük Demo Süreniz Sona Erdi");
             }
+        }
+
+        function handleHudStatusStripClick() {
+            handleMembershipBadgeClick();
         }
 
         // v11 YETKİ KONTROLÜ:
@@ -4896,14 +5051,9 @@
             dismissSplashAndEnterMap();
         }
 
-        // İlk açılışta siyah logo ekranı 1.8 saniye gösterildikten sonra giriş zorunluluğu olmadan otomatik haritaya geçer
-        setTimeout(() => {
-            const onboardCard = document.getElementById('auth-gate-step-onboarding');
-            const isOnboardingVisible = onboardCard && onboardCard.style.display === 'flex';
-            if (!splashDismissed && !isOnboardingVisible) {
-                dismissSplashAndEnterMap();
-            }
-        }, 1800);
+        // NOT: Giriş ekranı (Splash Screen) otomatik olarak atlamaz!
+        // Kullanıcı giriş ekranında "Haritayı Aç ve Başla" veya "Gmail ile Giriş Yap" seçeneklerinden birini kendisi seçer.
+        updateSplashScreenAuthUI();
 
         function ingestNetworkDoc(docId, data) {
             if (!data || typeof data !== 'object') return;
@@ -5034,6 +5184,7 @@
             const isUserAdmin = isMainAdminEmail(u.email);
             const isActive = Boolean(u.isActive || isUserAdmin);
             const isDemo = isUserDemoActive(u);
+            const safeUid = escapeHtmlSafe(u.uid || '');
             const safeName = escapeHtmlSafe(u.fullName || 'İsimsiz Personel');
             const safeTitle = escapeHtmlSafe(u.title || 'Ünvan Belirtilmedi');
             const safeComp = escapeHtmlSafe(u.company || 'Kurum / Şirket Belirtilmedi');
@@ -5072,57 +5223,81 @@
             const statusChipHtml = isUserAdmin
                 ? `<span class="net-status-chip admin-chip"><i class="fas fa-crown"></i> ANA KULLANICI (ADMİN) • AKTİF</span>`
                 : (isActive
-                    ? `<span class="net-status-chip active-chip"><i class="fas fa-check-circle"></i> AKTİF</span>`
+                    ? `<span class="net-status-chip active-chip"><i class="fas fa-check-circle"></i> AKTİF ÜYE</span>`
                     : (isDemo
-                        ? `<span class="net-status-chip" style="background:rgba(56,189,248,0.18); border:1px solid rgba(56,189,248,0.45); color:#7dd3fc;"><i class="fas fa-hourglass-half"></i> PASİF (3G DEMO)</span>`
-                        : `<span class="net-status-chip passive-chip"><i class="fas fa-user-clock"></i> PASİF</span>`));
+                        ? `<span class="net-status-chip" style="background:rgba(56,189,248,0.18); border:1px solid rgba(56,189,248,0.45); color:#7dd3fc;"><i class="fas fa-hourglass-half"></i> 3 GÜNLÜK DEMO AKTİF</span>`
+                        : `<span class="net-status-chip passive-chip"><i class="fas fa-user-lock"></i> PASİF (DEMO DOLDU)</span>`));
 
             const quotaChipHtml = isUserAdmin
-                ? `<span class="net-quota-chip"><i class="fas fa-infinity"></i> Referans Hakkı: Sınırsız (∞) • Eklenen: ${refs.length}</span>`
+                ? `<span class="net-quota-chip"><i class="fas fa-infinity"></i> Ref. Hakkı: Sınırsız (∞) • Eklenen: ${refs.length}</span>`
                 : (isActive
-                    ? `<span class="net-quota-chip ${remaining === 0 ? 'zero' : ''}"><i class="fas fa-gift"></i> Referans Hakkı: ${remaining} / ${userQuota}</span>`
-                    : `<span class="net-quota-chip zero"><i class="fas fa-ban"></i> Referans Hakkı: 0 (Pasif)</span>`);
+                    ? `<span class="net-quota-chip ${remaining === 0 ? 'zero' : ''}"><i class="fas fa-gift"></i> Ref. Hakkı: ${remaining} / ${userQuota}</span>`
+                    : `<span class="net-quota-chip zero"><i class="fas fa-ban"></i> Ref. Hakkı: 0 (${isDemo ? 'Demo' : 'Pasif'})</span>`);
 
+            const demoRemFormatted = formatDemoRemaining(u.demoExpiresAt, u.demoDisabledByAdmin);
             const referredByLine = isUserAdmin
-                ? `<div style="font-size:0.65rem; color:#fbbf24; font-weight:800; margin-top:2px;"><i class="fas fa-crown"></i> Kurucu Yönetici — Tam Sistem ve Kullanıcı Kontrol Yetkisi</div>`
-                : ((u.referredByName || u.referredByEmail)
-                    ? `<div style="font-size:0.65rem; color:#34d399; font-weight:700; margin-top:2px;"><i class="fas fa-handshake"></i> Onay / Referans: ${escapeHtmlSafe(u.referredByName || u.referredByEmail)}</div>`
-                    : `<div style="font-size:0.65rem; color:${isDemo ? '#38bdf8' : '#f87171'}; font-weight:700; margin-top:2px;"><i class="fas fa-hourglass-half"></i> ${isDemo ? '3 Günlük Demo Kullanımında (' + formatDemoRemaining(u.demoExpiresAt, u.demoDisabledByAdmin) + ')' : 'Henüz Referans Olunmadı (Pasif)'}</div>`);
+                ? `<div style="font-size:0.66rem; color:#fbbf24; font-weight:800; margin-top:2px;"><i class="fas fa-crown"></i> Kurucu Yönetici — Tam Sistem ve Kullanıcı Kontrol Yetkisi</div>`
+                : (isActive
+                    ? `<div style="font-size:0.66rem; color:#34d399; font-weight:700; margin-top:2px;"><i class="fas fa-handshake"></i> Onay / Referans: ${escapeHtmlSafe(u.referredByName || u.referredByEmail || 'Yönetici Onaylı')}</div>`
+                    : `<div style="font-size:0.66rem; color:${isDemo ? '#38bdf8' : '#f87171'}; font-weight:700; margin-top:2px;"><i class="fas fa-stopwatch"></i> ${isDemo ? '3 Günlük Demo Kalan Süre: <b data-demo-uid="' + safeUid + '">' + escapeHtmlSafe(demoRemFormatted) + '</b>' : '3 Günlük Demo Süresi Doldu • Referans Bekliyor'}</div>`);
 
             const grantBtnLabel = amIAdmin
                 ? `<i class="fas fa-crown"></i> Referans Ol / Aktif Yap`
                 : `<i class="fas fa-user-check"></i> Referans Ol (${myRemaining} Hak Kaldı)`;
 
-            // Sadece Admin (buraktonoz@gmail.com) için kart üzerinde doğrudan hızlı yönetim butonları
+            const adminDemoSummaryText = isActive
+                ? (u.demoExpiresAt && Number(u.demoExpiresAt) > Date.now() && !u.demoDisabledByAdmin
+                    ? `Aktif Üye (Demo: ${demoRemFormatted})`
+                    : `Tam Aktif Üye (Süresiz)`)
+                : (isDemo ? `Kalan: ${demoRemFormatted}` : demoRemFormatted);
+
+            // Sadece Admin (buraktonoz@gmail.com) için kart altında ayrı, düzenli yönetim kutusu (Üst üste binmez)
             const adminQuickControlsHtml = (amIAdmin && !isUserAdmin && u.uid) ? `
-                <div style="width:100%; margin-top:6px; padding-top:6px; border-top:1px dashed rgba(245,158,11,0.3); display:flex; flex-wrap:wrap; gap:5px; align-items:center;">
-                    <span style="font-size:0.62rem; font-weight:800; color:#fde68a;"><i class="fas fa-user-shield"></i> ADMİN:</span>
-                    ${isActive
-                        ? `<button type="button" class="admin-ctrl-btn make-passive" onclick="adminToggleUserActive('${escapeHtmlSafe(u.uid)}', false)"><i class="fas fa-user-slash"></i> Pasife Çek</button>`
-                        : `<button type="button" class="admin-ctrl-btn make-active" onclick="adminToggleUserActive('${escapeHtmlSafe(u.uid)}', true)"><i class="fas fa-user-check"></i> Aktif Yap</button>`
-                    }
-                    <button type="button" class="admin-ctrl-btn quota-btn" onclick="adminAdjustUserQuota('${escapeHtmlSafe(u.uid)}', 1)"><i class="fas fa-plus"></i> +1 Hak</button>
-                    <button type="button" class="admin-ctrl-btn quota-btn" onclick="adminSetUserQuota('${escapeHtmlSafe(u.uid)}', 5)">5 Hak</button>
-                    <button type="button" class="admin-ctrl-btn quota-btn" onclick="adminSetUserQuota('${escapeHtmlSafe(u.uid)}', 10)">10 Hak</button>
-                    <button type="button" class="admin-ctrl-btn demo-reset" onclick="adminRestartUserDemo('${escapeHtmlSafe(u.uid)}')"><i class="fas fa-redo"></i> 3G Demo Başlat</button>
+                <div class="network-admin-panel-box">
+                    <div class="network-admin-header">
+                        <span><i class="fas fa-crown" style="color:var(--warning);"></i> ADMİN HIZLI KONTROL PANELİ</span>
+                        <span style="background:rgba(0,0,0,0.38); border:1px solid rgba(255,255,255,0.14); padding:2px 8px; border-radius:8px; font-family:'JetBrains Mono',monospace; font-size:0.64rem;">
+                            <i class="fas fa-hourglass-half" style="color:#38bdf8;"></i> Demo: <b data-demo-uid="${safeUid}" style="color:${isDemo ? '#7dd3fc' : (isActive ? '#34d399' : '#fca5a5')};">${escapeHtmlSafe(adminDemoSummaryText)}</b>
+                        </span>
+                    </div>
+                    <div class="network-admin-btn-grid">
+                        ${isActive
+                            ? `<button type="button" class="admin-ctrl-btn make-passive" onclick="adminToggleUserActive('${safeUid}', false)"><i class="fas fa-user-slash"></i> Pasife Çek</button>`
+                            : `<button type="button" class="admin-ctrl-btn make-active" onclick="adminToggleUserActive('${safeUid}', true)"><i class="fas fa-user-check"></i> Aktif Yap</button>`
+                        }
+                        <button type="button" class="admin-ctrl-btn demo-reset" onclick="adminRestartUserDemo('${safeUid}')"><i class="fas fa-redo"></i> 3G Demo Başlat / Sıfırla</button>
+                        <button type="button" class="admin-ctrl-btn demo-stop" onclick="adminStopUserDemo('${safeUid}')"><i class="fas fa-stop-circle"></i> Demoyu Kapat</button>
+                        <button type="button" class="admin-ctrl-btn quota-btn" onclick="adminAdjustUserQuota('${safeUid}', 1)"><i class="fas fa-plus-circle"></i> +1 Ref. Hakkı Ver</button>
+                    </div>
+                    <div class="network-admin-quota-row">
+                        <span style="font-size:0.65rem; color:#ddd6fe; font-weight:700;"><i class="fas fa-gift"></i> Hızlı Kontenjan Ata (${remaining}/${userQuota}):</span>
+                        <div style="display:flex; gap:4px; flex-wrap:wrap;">
+                            <button type="button" class="admin-ctrl-btn quota-btn" onclick="adminSetUserQuota('${safeUid}', 0)">0 Hak</button>
+                            <button type="button" class="admin-ctrl-btn quota-btn" onclick="adminSetUserQuota('${safeUid}', 3)">3 Hak</button>
+                            <button type="button" class="admin-ctrl-btn quota-btn" onclick="adminSetUserQuota('${safeUid}', 5)">5 Hak</button>
+                            <button type="button" class="admin-ctrl-btn quota-btn" onclick="adminSetUserQuota('${safeUid}', 10)">10 Hak</button>
+                        </div>
+                    </div>
                 </div>
             ` : '';
 
             return `
             <div class="network-user-card ${isMe ? 'is-me' : ''} ${!isActive ? 'is-passive-user' : ''}">
-                <div class="network-user-left">
-                    <img class="network-avatar" src="${avatarSrc}" alt="${safeName}" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${fallbackAvatar}';">
-                    <div class="network-user-meta">
-                        <div class="network-user-name">
-                            ${safeName}
-                            ${isMe ? '<span class="network-me-tag">SİZ</span>' : ''}
-                            ${statusChipHtml}
-                            ${quotaChipHtml}
+                <div class="network-user-top-row">
+                    <div class="network-user-left">
+                        <img class="network-avatar" src="${avatarSrc}" alt="${safeName}" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${fallbackAvatar}';">
+                        <div class="network-user-meta">
+                            <div class="network-user-name">
+                                ${safeName}
+                                ${isMe ? '<span class="network-me-tag">SİZ</span>' : ''}
+                                ${statusChipHtml}
+                                ${quotaChipHtml}
+                            </div>
+                            <div class="network-user-role"><i class="fas fa-user-tie"></i> ${safeTitle}</div>
+                            <div class="network-user-org"><i class="fas fa-building"></i> ${safeComp}</div>
+                            <div class="network-user-mail"><i class="fas fa-envelope"></i> ${safeEmail || '-'}</div>
+                            ${referredByLine}
                         </div>
-                        <div class="network-user-role"><i class="fas fa-user-tie"></i> ${safeTitle}</div>
-                        <div class="network-user-org"><i class="fas fa-building"></i> ${safeComp}</div>
-                        <div class="network-user-mail"><i class="fas fa-envelope"></i> ${safeEmail || '-'}</div>
-                        ${referredByLine}
                     </div>
                 </div>
                 <div class="network-user-actions">
@@ -5136,7 +5311,7 @@
                         <i class="fas fa-envelope"></i> ${isRequestingRef ? 'Referans İste (Mail)' : 'Mail Gönder'}
                     </a>
                     <button type="button" class="btn-copy-mail" onclick="copyTextToClipboard('${safeEmail}', 'E-posta adresi kopyalandı')">
-                        <i class="fas fa-copy"></i> Kopyala
+                        <i class="fas fa-copy"></i> Maili Kopyala
                     </button>
                     ` : ''}
                 </div>
@@ -5300,10 +5475,12 @@
             const cAct = document.getElementById('adm-count-active');
             const cDem = document.getElementById('adm-count-demo');
             const cPas = document.getElementById('adm-count-passive');
+            const totalBadge = document.getElementById('admin-panel-total-badge');
             if (cAll) cAll.innerText = allUsers.length;
             if (cAct) cAct.innerText = activeList.length;
             if (cDem) cDem.innerText = demoList.length;
             if (cPas) cPas.innerText = passiveExpiredList.length;
+            if (totalBadge) totalBadge.innerText = `${allUsers.length} Kayıtlı Üye`;
 
             let targetPool = allUsers;
             if (currentAdminFilterTab === 'ACTIVE') targetPool = activeList;
@@ -5342,19 +5519,22 @@
                 const totalQuota = isUserAdmin ? '∞' : Math.max(0, Number(u.referralQuota || 0));
                 const usedQuota = refs.length;
                 const remQuota = isUserAdmin ? '∞' : Math.max(0, Number(u.referralQuota || 0) - usedQuota);
+                const rawDemoRem = formatDemoRemaining(u.demoExpiresAt, u.demoDisabledByAdmin);
                 const demoText = isUserAdmin
-                    ? 'Kurucu Ana Yönetici (Süresiz)'
+                    ? 'Süresiz (Ana Admin)'
                     : (isActive
-                        ? 'Tam Aktif Üye (Demo Gerekmez)'
-                        : formatDemoRemaining(u.demoExpiresAt, u.demoDisabledByAdmin));
+                        ? (u.demoExpiresAt && Number(u.demoExpiresAt) > Date.now() && !u.demoDisabledByAdmin
+                            ? `Aktif Üye (Demo: ${rawDemoRem})`
+                            : 'Tam Aktif Üye (Süresiz)')
+                        : (isDemo ? `Kalan: ${rawDemoRem}` : rawDemoRem));
 
                 const statusBadge = isUserAdmin
                     ? `<span class="net-status-chip admin-chip"><i class="fas fa-crown"></i> ANA ADMİN</span>`
                     : (isActive
                         ? `<span class="net-status-chip active-chip"><i class="fas fa-check-circle"></i> AKTİF ÜYE</span>`
                         : (isDemo
-                            ? `<span class="net-status-chip" style="background:rgba(56,189,248,0.18); border:1px solid rgba(56,189,248,0.45); color:#7dd3fc;"><i class="fas fa-hourglass-half"></i> PASİF (DEMO AÇIK)</span>`
-                            : `<span class="net-status-chip passive-chip"><i class="fas fa-user-lock"></i> PASİF (DEMO BİTTİ)</span>`));
+                            ? `<span class="net-status-chip" style="background:rgba(56,189,248,0.18); border:1px solid rgba(56,189,248,0.45); color:#7dd3fc;"><i class="fas fa-hourglass-half"></i> 3 GÜNLÜK DEMO AKTİF</span>`
+                            : `<span class="net-status-chip passive-chip"><i class="fas fa-user-lock"></i> PASİF (DEMO DOLDU)</span>`));
 
                 if (isUserAdmin) {
                     return `
@@ -5378,12 +5558,12 @@
                 }
 
                 return `
-                <div class="admin-user-ctrl-card">
+                <div class="admin-user-ctrl-card ${isActive ? 'is-active-card' : 'is-passive-card'}">
                     <div class="admin-user-ctrl-top">
                         <div class="admin-user-ctrl-info">
                             <img class="network-avatar" src="${avatarSrc}" alt="${safeName}" onerror="this.onerror=null;this.src='${fallbackAvatar}';">
-                            <div style="min-width:0;">
-                                <div style="font-size:0.84rem; font-weight:800; color:#fff; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                            <div style="min-width:0; flex:1;">
+                                <div style="font-size:0.86rem; font-weight:800; color:#fff; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
                                     ${safeName} ${statusBadge}
                                 </div>
                                 <div style="font-size:0.7rem; color:var(--accent); font-family:'JetBrains Mono',monospace; word-break:break-all;">${safeEmail}</div>
@@ -5392,14 +5572,14 @@
                         </div>
                     </div>
 
-                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; font-size:0.68rem; background:rgba(0,0,0,0.28); padding:7px 9px; border-radius:9px; border:1px solid var(--border-light);">
-                        <div>
-                            <span style="color:var(--text-muted);">Referans Hakkı:</span>
-                            <b style="color:#c4b5fd; font-family:'JetBrains Mono',monospace;"> ${remQuota} / ${totalQuota} (Kullanılan: ${usedQuota})</b>
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; font-size:0.69rem; background:rgba(0,0,0,0.34); padding:8px 10px; border-radius:10px; border:1px solid var(--border-light);">
+                        <div style="display:flex; flex-direction:column; gap:2px;">
+                            <span style="color:var(--text-muted); font-size:0.62rem; text-transform:uppercase; font-weight:700;"><i class="fas fa-gift" style="color:#c4b5fd;"></i> Referans Kontenjanı:</span>
+                            <b style="color:#ddd6fe; font-family:'JetBrains Mono',monospace;">${remQuota} / ${totalQuota} Hak (Kullanılan: ${usedQuota})</b>
                         </div>
-                        <div>
-                            <span style="color:var(--text-muted);">3G Demo Durumu:</span>
-                            <b style="color:${isDemo ? '#7dd3fc' : (isActive ? '#34d399' : '#fca5a5')}; font-family:'JetBrains Mono',monospace;"> ${escapeHtmlSafe(demoText)}</b>
+                        <div style="display:flex; flex-direction:column; gap:2px;">
+                            <span style="color:var(--text-muted); font-size:0.62rem; text-transform:uppercase; font-weight:700;"><i class="fas fa-stopwatch" style="color:#38bdf8;"></i> Kalan 3G Demo Süresi:</span>
+                            <b data-demo-uid="${safeUid}" style="color:${isDemo ? '#7dd3fc' : (isActive ? '#34d399' : '#fca5a5')}; font-family:'JetBrains Mono',monospace;">${escapeHtmlSafe(demoText)}</b>
                         </div>
                     </div>
 
@@ -5429,7 +5609,7 @@
                             <button type="button" class="admin-ctrl-btn quota-btn" onclick="adminSetUserQuota('${safeUid}', 3)">3</button>
                             <button type="button" class="admin-ctrl-btn quota-btn" onclick="adminSetUserQuota('${safeUid}', 5)">5</button>
                             <button type="button" class="admin-ctrl-btn quota-btn" onclick="adminSetUserQuota('${safeUid}', 10)">10</button>
-                            <input type="number" id="adm-custom-q-${safeUid}" min="0" max="500" value="${Number(u.referralQuota || 0)}" style="width:52px; padding:4px 6px; border-radius:7px; background:rgba(0,0,0,0.45); border:1px solid rgba(139,92,246,0.45); color:#fff; font-family:'JetBrains Mono',monospace; font-size:0.72rem; text-align:center;">
+                            <input type="number" id="adm-custom-q-${safeUid}" min="0" max="500" value="${Number(u.referralQuota || 0)}" style="width:52px; padding:5px 6px; border-radius:7px; background:rgba(0,0,0,0.45); border:1px solid rgba(139,92,246,0.45); color:#fff; font-family:'JetBrains Mono',monospace; font-size:0.72rem; text-align:center;">
                             <button type="button" class="admin-ctrl-btn quota-btn" onclick="adminSetUserQuotaFromInput('${safeUid}')">Uygula</button>
                         </div>
                     </div>
@@ -5497,7 +5677,6 @@
             try {
                 await Promise.allSettled([
                     db.collection('azimut_network').doc(uid).set(updatePayload, { merge: true }),
-                    db.collection('users').doc(uid).set(updatePayload, { merge: true }),
                     targetMail ? db.collection('azimut_referrals').doc(getReferralDocKey(targetMail)).set({
                         email: targetMail,
                         referredByUid: auth.currentUser.uid,
@@ -5572,7 +5751,6 @@
             try {
                 await Promise.allSettled([
                     db.collection('azimut_network').doc(uid).set(updatePayload, { merge: true }),
-                    db.collection('users').doc(uid).set(updatePayload, { merge: true }),
                     targetMail ? db.collection('azimut_referrals').doc(getReferralDocKey(targetMail)).set({
                         email: targetMail,
                         preAssignedQuota: cleanQuota,
@@ -5630,10 +5808,7 @@
             };
 
             try {
-                await Promise.allSettled([
-                    db.collection('azimut_network').doc(uid).set(payload, { merge: true }),
-                    db.collection('users').doc(uid).set(payload, { merge: true })
-                ]);
+                await db.collection('azimut_network').doc(uid).set(payload, { merge: true });
             } catch (e) {}
 
             saveCachedNetworkMap();
@@ -5661,10 +5836,7 @@
             };
 
             try {
-                await Promise.allSettled([
-                    db.collection('azimut_network').doc(uid).set(payload, { merge: true }),
-                    db.collection('users').doc(uid).set(payload, { merge: true })
-                ]);
+                await db.collection('azimut_network').doc(uid).set(payload, { merge: true });
             } catch (e) {}
 
             saveCachedNetworkMap();
@@ -5731,9 +5903,6 @@
             showToast(`✅ "${targetEmail}" aktif edildi ve ${assignQuota} referans hakkı tanımlandı!`, "fa-crown");
         }
 
-        // Uygulama açılışında ağ listesini gerçek zamanlı dinlemeye başla
-        startAzimutNetworkRealtime();
-
         auth.onAuthStateChanged((user) => {
             if (currentUserDocUnsub) { try { currentUserDocUnsub(); } catch (e) {} currentUserDocUnsub = null; }
             if (currentUserNetDocUnsub) { try { currentUserNetDocUnsub(); } catch (e) {} currentUserNetDocUnsub = null; }
@@ -5787,7 +5956,8 @@
                         const mergedEmail = normalizeEmail(user.email || cloudProf.email || docData.email || currentUserProfile.email || '');
                         const mergedName = (cloudProf.fullName || docData.fullName || currentUserProfile.fullName || user.displayName || 'Personel').trim();
                         const mergedRefs = sanitizeEmailArray(docData.referrals || cloudProf.referrals || currentUserProfile.referrals || []);
-                        const combinedRaw = { ...currentUserProfile, ...cloudProf, ...docData };
+                        const netExisting = azimutNetworkUsersMap[user.uid] || {};
+                        const combinedRaw = { ...currentUserProfile, ...cloudProf, ...docData, ...netExisting };
                         const demoInfo = ensureUserDemoTimestamps(user.uid, combinedRaw);
                         const statusCalc = computeUserStatusAndQuota(mergedEmail, mergedRefs, globalReferredEmailsMap, combinedRaw);
 
@@ -5822,7 +5992,8 @@
                 } catch (e) {}
 
                 // 2. Kullanıcının kendi azimut_network/{uid} dökümanını da canlı dinle
-                // (Admin kullanıcıyı aktife/pasife aldığında, referans hakkı verdiğinde veya 3 günlük demoyu sıfırladığında anında yansır!)
+                // (Admin azimut_network üzerinden kullanıcıyı aktife/pasife aldığında, referans hakkı verdiğinde veya 3 günlük demoyu sıfırladığında
+                //  kullanıcının kendi oturumu bunu yakalar ve kendi özel users/{uid} dökümanına da otomatik senkronize eder!)
                 try {
                     currentUserNetDocUnsub = db.collection('azimut_network').doc(user.uid).onSnapshot((netDoc) => {
                         if (!netDoc.exists) return;
@@ -5838,24 +6009,52 @@
                                 referredByName: netRefByName
                             };
                         }
-                        if (typeof netData.adminCustomQuota === 'number') {
+                        let needsOwnerSelfSync = false;
+                        if (typeof netData.adminCustomQuota === 'number' && currentUserProfile.adminCustomQuota !== netData.adminCustomQuota) {
                             currentUserProfile.adminCustomQuota = netData.adminCustomQuota;
+                            needsOwnerSelfSync = true;
                         }
-                        if (typeof netData.adminApproved === 'boolean') {
+                        if (typeof netData.adminApproved === 'boolean' && currentUserProfile.adminApproved !== netData.adminApproved) {
                             currentUserProfile.adminApproved = netData.adminApproved;
+                            needsOwnerSelfSync = true;
                         }
-                        if (typeof netData.adminForcePassive === 'boolean') {
+                        if (typeof netData.adminForcePassive === 'boolean' && currentUserProfile.adminForcePassive !== netData.adminForcePassive) {
                             currentUserProfile.adminForcePassive = netData.adminForcePassive;
+                            needsOwnerSelfSync = true;
                         }
-                        if (netData.demoStartTime) currentUserProfile.demoStartTime = netData.demoStartTime;
-                        if (netData.demoExpiresAt) currentUserProfile.demoExpiresAt = netData.demoExpiresAt;
-                        if (typeof netData.demoDisabledByAdmin === 'boolean') {
+                        if (netData.demoStartTime && currentUserProfile.demoStartTime !== netData.demoStartTime) {
+                            currentUserProfile.demoStartTime = netData.demoStartTime;
+                            needsOwnerSelfSync = true;
+                        }
+                        if (netData.demoExpiresAt && currentUserProfile.demoExpiresAt !== netData.demoExpiresAt) {
+                            currentUserProfile.demoExpiresAt = netData.demoExpiresAt;
+                            needsOwnerSelfSync = true;
+                        }
+                        if (typeof netData.demoDisabledByAdmin === 'boolean' && currentUserProfile.demoDisabledByAdmin !== netData.demoDisabledByAdmin) {
                             currentUserProfile.demoDisabledByAdmin = netData.demoDisabledByAdmin;
+                            needsOwnerSelfSync = true;
                         }
                         ingestNetworkDoc(user.uid, netData);
                         recomputeGlobalReferralActivation();
                         saveCachedProfile(currentUserProfile);
                         refreshUserProfileUI();
+
+                        // Kullanıcının kendi oturumu (isOwner) üzerinden users/{uid} dökümanını senkronize et
+                        if (needsOwnerSelfSync) {
+                            db.collection('users').doc(user.uid).set({
+                                isActive: currentUserProfile.isActive,
+                                adminApproved: currentUserProfile.adminApproved,
+                                adminForcePassive: currentUserProfile.adminForcePassive,
+                                adminCustomQuota: currentUserProfile.adminCustomQuota,
+                                quotaVersion: 11,
+                                referralQuota: currentUserProfile.referralQuota,
+                                remainingReferrals: currentUserProfile.remainingReferrals,
+                                demoStartTime: currentUserProfile.demoStartTime,
+                                demoExpiresAt: currentUserProfile.demoExpiresAt,
+                                demoDisabledByAdmin: currentUserProfile.demoDisabledByAdmin,
+                                updatedAt: Date.now()
+                            }, { merge: true }).catch(() => {});
+                        }
                     }, () => {});
                 } catch (e) {}
 
@@ -5984,14 +6183,20 @@
                         document.getElementById('onboard-input-title').value = currentUserProfile.title || '';
                         document.getElementById('onboard-input-company').value = currentUserProfile.company || '';
                     } else {
-                        dismissSplashAndEnterMap();
+                        // Giriş ekranı açıksa otomatik atlama yapmaz; kullanıcının giriş durumunu ekranda gösterir ve kullanıcının "Haritayı Aç ve Başla" butonuna basmasını bekler
+                        updateSplashScreenAuthUI();
+                        updateLiveDemoCountdownElements();
                     }
                 }).catch((err) => {
                     console.warn("Kullanıcı verisi okunurken çevrimdışı mod:", err);
-                    dismissSplashAndEnterMap();
+                    updateSplashScreenAuthUI();
+                    updateLiveDemoCountdownElements();
                 });
             } else {
                 // v11: Giriş yapılmamışsa veya çıkış yapıldıysa uygulama KİLİTLENMEZ; Misafir modunda harita ve katmanlar açık kalır!
+                if (networkUnsubUsers) { try { networkUnsubUsers(); } catch (e) {} networkUnsubUsers = null; }
+                if (networkUnsubDir) { try { networkUnsubDir(); } catch (e) {} networkUnsubDir = null; }
+                if (networkUnsubRefs) { try { networkUnsubRefs(); } catch (e) {} networkUnsubRefs = null; }
                 if (currentUserDocUnsub) { try { currentUserDocUnsub(); } catch (e) {} currentUserDocUnsub = null; }
                 if (currentUserNetDocUnsub) { try { currentUserNetDocUnsub(); } catch (e) {} currentUserNetDocUnsub = null; }
                 document.getElementById('auth-logged-in').style.display = 'none';
