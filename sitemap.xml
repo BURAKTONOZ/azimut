@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://buraktonoz.com/azimut/</loc>
-    <lastmod>2026-11-02T19:39:03.287Z</lastmod>
+    <lastmod>2026-11-02T22:51:54.539Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,12 +13,22 @@
   </url>
   <url>
     <loc>https://buraktonoz.com/azimut/tanitim.html</loc>
-    <lastmod>2026-11-02T19:39:03.287Z</lastmod>
+    <lastmod>2026-11-02T22:51:54.539Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://buraktonoz.com/azimut/ek2.png</image:loc>
       <image:title>TKGM Tüm Parselleri Görme ve MAKS Sınır Çizimi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buraktonoz.com/azimut/tanitim.html?makale=aplikasyon-noktalarinin-saglamlastirilmasi-tkgm-parsel-ve-itrf96-uyumlu-rop-suvj</loc>
+    <lastmod>2026-11-02T22:51:53.582Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:title>Aplikasyon Noktalarının Sağlamlaştırılması: TKGM Parsel ve ITRF96 Uyumlu Röperleme, İşaretleme Standartları ve AZİMUT Pro ile Saha Çözümleri</image:title>
     </image:image>
   </url>
   <url>
