@@ -1939,6 +1939,98 @@
             margin: 0 0 6px 0; font-size: 0.85rem; color: var(--accent);
             display: flex; align-items: center; gap: 6px;
         }
+
+        /* v12: Projeler & Noktalar Kompakt İçe/Dışa Aktar Aksiyon Barı ve Detaylı Aktarım Merkezi Stilleri */
+        .records-action-bar {
+            display: grid; grid-template-columns: 1fr 1fr auto; gap: 7px; margin-bottom: 10px;
+        }
+        .btn-io-trigger {
+            padding: 9px 10px; border-radius: 11px; font-size: 0.76rem; font-weight: 800;
+            display: flex; align-items: center; justify-content: center; gap: 6px;
+            cursor: pointer; transition: 0.18s; border: 1px solid var(--border-light);
+            white-space: nowrap;
+        }
+        .btn-io-trigger.import-mode {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.18), rgba(0, 229, 255, 0.10));
+            border-color: rgba(16, 185, 129, 0.50); color: #34d399;
+        }
+        .btn-io-trigger.export-mode {
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.18), rgba(0, 119, 255, 0.14));
+            border-color: rgba(0, 229, 255, 0.50); color: var(--accent);
+        }
+        .btn-io-trigger.area-mode {
+            background: var(--card-bg); border-color: rgba(245, 158, 11, 0.45); color: var(--warning);
+            padding: 9px 12px;
+        }
+        .btn-io-trigger:active { transform: scale(0.96); }
+
+        .io-tabs-bar {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 6px;
+            background: var(--card-bg); padding: 5px; border-radius: 13px;
+            border: 1px solid var(--border-light); margin-bottom: 12px;
+        }
+        .io-tab-btn {
+            padding: 10px 8px; border-radius: 9px; border: none; background: transparent;
+            color: var(--text-muted); font-size: 0.78rem; font-weight: 800; cursor: pointer;
+            display: flex; align-items: center; justify-content: center; gap: 6px; transition: 0.2s;
+        }
+        .io-tab-btn.active.import-tab {
+            background: linear-gradient(135deg, #10b981, #059669); color: #ffffff;
+            box-shadow: 0 3px 12px rgba(16, 185, 129, 0.35);
+        }
+        .io-tab-btn.active.export-tab {
+            background: linear-gradient(135deg, var(--accent), var(--accent-secondary)); color: #000000;
+            box-shadow: 0 3px 12px rgba(0, 229, 255, 0.35);
+        }
+        .io-settings-box {
+            background: var(--card-bg); border: 1px solid var(--border-light);
+            border-radius: 14px; padding: 12px; display: flex; flex-direction: column; gap: 9px;
+            margin-bottom: 12px;
+        }
+        .io-setting-row {
+            display: flex; flex-direction: column; gap: 4px;
+        }
+        .io-setting-row label {
+            font-size: 0.69rem; font-weight: 800; color: var(--text-muted);
+            text-transform: uppercase; letter-spacing: 0.3px; display: flex; align-items: center; gap: 5px;
+        }
+        .io-setting-select, .io-setting-input {
+            width: 100%; padding: 9px 11px; border-radius: 10px;
+            background: rgba(0, 0, 0, 0.38); border: 1px solid var(--border-light);
+            color: var(--text-main); font-size: 0.78rem; font-weight: 700; outline: none;
+        }
+        body.daylight-mode .io-setting-select, body.daylight-mode .io-setting-input {
+            background: #ffffff; color: #0f172a;
+        }
+        .io-format-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;
+        }
+        .io-format-card {
+            background: var(--card-bg); border: 1px solid var(--border-light);
+            border-radius: 12px; padding: 10px; cursor: pointer; transition: 0.18s;
+            display: flex; flex-direction: column; gap: 4px; text-align: left;
+            color: var(--text-main);
+        }
+        .io-format-card:hover {
+            border-color: var(--accent); background: rgba(0, 229, 255, 0.08);
+        }
+        .io-format-card:active { transform: scale(0.97); }
+        .io-format-card-top {
+            display: flex; align-items: center; justify-content: space-between; gap: 6px;
+        }
+        .io-format-title {
+            font-size: 0.78rem; font-weight: 800; color: var(--text-main);
+            display: flex; align-items: center; gap: 6px;
+        }
+        .io-format-ext {
+            font-size: 0.62rem; font-weight: 800; font-family: 'JetBrains Mono', monospace;
+            padding: 2px 6px; border-radius: 6px;
+            background: rgba(0, 229, 255, 0.14); color: var(--accent);
+            border: 1px solid rgba(0, 229, 255, 0.35);
+        }
+        .io-format-desc {
+            font-size: 0.65rem; color: var(--text-muted); line-height: 1.3;
+        }
     </style>
 </head>
 <body>
@@ -1978,13 +2070,13 @@
         </a>
     </div>
 
-    <!-- v11: SİYAH LOGO İLE ZEMİN BÜTÜNLEŞİK KARŞILAMA EKRANI (OTOMATİK ATLAMAZ, KULLANICI KENDİ SEÇER) -->
+    <!-- v12: SİYAH LOGO İLE ZEMİN BÜTÜNLEŞİK KARŞILAMA EKRANI (OTOMATİK ATLAMAZ, KULLANICI KENDİ SEÇER) -->
     <div id="splash-screen">
         <div class="auth-gate-wrap">
             <div class="splash-logo-stage">
                 <img src="logo.jpeg" alt="AZİMUT Pro Logo" class="splash-logo-img">
             </div>
-            <div class="splash-badge-pill"><span>PRO</span> • JEODEZİK ARAZİ & KURUMSAL AĞ SİSTEMİ v11.0</div>
+            <div class="splash-badge-pill"><span>PRO</span> • JEODEZİK ARAZİ & KURUMSAL AĞ SİSTEMİ v12.0</div>
 
             <!-- ADIM 1: DOĞRUDAN HARİTAYI AÇMA VEYA İSTEĞE BAĞLI GMAIL GİRİŞ KARTI (KULLANICI SEÇİMİYLE GEÇİLİR) -->
             <div class="auth-gate-card" id="auth-gate-step-login">
@@ -1999,7 +2091,7 @@
                     <span id="splash-enter-btn-text">Haritayı Aç ve Başla</span>
                 </button>
 
-                <button type="button" class="splash-sub-login-btn" id="btn-gate-google-login" onclick="loginWithGoogle()">
+                <button type="button" class="splash-sub-login-btn" id="btn-gate-google-login" onclick="loginWithGoogle(true)">
                     <i class="fab fa-google" style="color:#ea4335; font-size:1rem;"></i>
                     <span id="gate-login-btn-text">Gmail ile Giriş Yap (3 Gün Demo / Üye Girişi)</span>
                 </button>
@@ -2050,7 +2142,7 @@
 
         <div class="splash-footer">
             <h3>CREATED BY BURAK TONOZ</h3>
-            <h3>AZİMUT PRO v11.0 • KURUMSAL</h3>
+            <h3>AZİMUT PRO v12.0 • KURUMSAL</h3>
         </div>
     </div>
 
@@ -2063,7 +2155,7 @@
         </div>
         <div class="drawer-body">
 
-            <!-- v11: GİRİŞ YAPAN PERSONEL KİMLİK KARTI, 3 GÜNLÜK DEMO SAYACI VE ADMİN KONTROL BUTONU -->
+            <!-- v12: GİRİŞ YAPAN PERSONEL KİMLİK KARTI, 3 GÜNLÜK DEMO SAYACI VE ADMİN KONTROL BUTONU -->
             <div class="drawer-section">
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
                     <h3 style="margin:0;">Personel & Üyelik Durumu</h3>
@@ -2097,16 +2189,22 @@
                     </div>
 
                     <!-- Giriş Yapmamış Kullanıcı İçin Hızlı Gmail Giriş Butonu -->
-                    <button type="button" id="drawer-guest-login-btn" class="google-login-btn" style="padding:9px; font-size:0.78rem;" onclick="loginWithGoogle()">
+                    <button type="button" id="drawer-guest-login-btn" class="google-login-btn" style="padding:9px; font-size:0.78rem;" onclick="loginWithGoogle(true)">
                         <i class="fab fa-google" style="color:#ea4335;"></i> Gmail ile Giriş Yap (3 Gün Demo Başlat)
                     </button>
 
-                    <div class="drawer-personnel-actions" id="drawer-logged-in-actions" style="display:none;">
+                    <div class="drawer-personnel-actions" id="drawer-logged-in-actions" style="display:none; flex-wrap:wrap;">
                         <button type="button" class="drawer-mini-btn accent" onclick="toggleDrawerProfileEdit()">
                             <i class="fas fa-user-edit"></i> Bilgileri Düzenle
                         </button>
                         <button type="button" class="drawer-mini-btn" onclick="toggleDrawer(); switchTab('tab-profile');">
                             <i class="fas fa-id-card" style="color:var(--success);"></i> Profil & Haklarım
+                        </button>
+                        <button type="button" class="drawer-mini-btn" style="flex-basis:calc(50% - 4px);" onclick="switchGoogleAccount()">
+                            <i class="fab fa-google" style="color:#ea4335;"></i> Farklı Gmail Seç
+                        </button>
+                        <button type="button" class="drawer-mini-btn" style="flex-basis:calc(50% - 4px); border-color:rgba(239,68,68,0.4); color:#fca5a5;" onclick="logout()">
+                            <i class="fas fa-sign-out-alt"></i> Çıkış Yap
                         </button>
                     </div>
 
@@ -2211,7 +2309,7 @@
                 </div>
             </div>
 
-            <!-- v11: AYARLARDA KVKK VE KİŞİSEL VERİLERİN KORUNMASI BÖLÜMÜ (KULLANIMLA OTOMATİK KABUL) -->
+            <!-- v12: AYARLARDA KVKK VE KİŞİSEL VERİLERİN KORUNMASI BÖLÜMÜ (KULLANIMLA OTOMATİK KABUL) -->
             <div class="drawer-section">
                 <h3>KVKK & Kişisel Verilerin Korunması</h3>
                 <div class="kvkk-status-card">
@@ -2235,7 +2333,7 @@
             <div class="drawer-section">
                 <h3>Hakkında</h3>
                 <div class="drawer-card">
-                    <p class="info-text"><b>AZİMUT Pro v11.0;</b> arazide çalışan harita, orman, inşaat ve elektrik mühendislerinin koordinat dönüşümü, pusula sensörlü canlı nokta aplikasyonu, TKGM parsel/adres sorgulama ve CAD veri aktarımı ihtiyacını karşılamak için Harita Mühendisi <b>Burak Tonoz</b> tarafından geliştirilmiştir.</p>
+                    <p class="info-text"><b>AZİMUT Pro v12.0;</b> arazide çalışan harita, orman, inşaat ve elektrik mühendislerinin koordinat dönüşümü, pusula sensörlü canlı nokta aplikasyonu, TKGM parsel/adres sorgulama ve CAD veri aktarımı ihtiyacını karşılamak için Harita Mühendisi <b>Burak Tonoz</b> tarafından geliştirilmiştir.</p>
                     <p class="info-text" style="margin-top:6px;">Çevrimdışı (Offline) önbellek koruması aktif: İnternet olmasa bile tüm ölçümleriniz cihaz hafızasında güvendedir.</p>
                 </div>
             </div>
@@ -2243,7 +2341,7 @@
         </div>
     </div>
 
-    <!-- HUD (ÜST BAR - v11 AZİMUT PRO KOMPAKT TELEMETRİ, KOORDİNAT & CANLI DEMO SAYACI PANELİ) -->
+    <!-- HUD (ÜST BAR - v12 AZİMUT PRO KOMPAKT TELEMETRİ & KOORDİNAT PANELİ — Z/Semt/Hız altında hiçbir ekstra şerit yok!) -->
     <div class="hud-container" id="hud-bar">
         <div class="hud-top">
             <div class="hud-left-group">
@@ -2286,15 +2384,6 @@
                 <div class="hud-subbar-item" onclick="goToMyLocation()" title="Yükseklik (Kot)"><i class="fas fa-mountain"></i> Z: <b id="live-alt">--.- m</b></div>
                 <div class="hud-subbar-item" onclick="enableCompassPermission(true)" title="Pusula / Yön Sensörünü Kalibre Et"><i class="fas fa-compass"></i> Semt: <b id="live-heading">---°</b></div>
                 <div class="hud-subbar-item" title="Anlık Hız"><i class="fas fa-tachometer-alt"></i> Hız: <b id="live-speed">0.0 km/s</b></div>
-            </div>
-            <!-- v11: Canlı Üyelik / 3 Günlük Demo Sayacı / Misafir Giriş Durum Şeridi -->
-            <div class="hud-membership-strip" id="hud-membership-strip" onclick="handleHudStatusStripClick()">
-                <span id="hud-status-left-text" style="color:var(--text-muted); display:flex; align-items:center; gap:5px;">
-                    <i class="fas fa-user-clock" style="color:var(--accent);"></i> Harita Görünümü (Giriş Yapılmadı)
-                </span>
-                <span class="hud-demo-timer-pill" id="hud-demo-countdown-pill">
-                    <i class="fab fa-google"></i> Gmail ile Giriş Yap
-                </span>
             </div>
         </div>
     </div>
@@ -2528,7 +2617,7 @@
         </div>
     </div>
 
-    <!-- BİRLEŞİK KAYIT YÖNETİCİSİ MODALI -->
+    <!-- BİRLEŞİK KAYIT YÖNETİCİSİ MODALI (v12: Alt dışa aktarma çubuğu kaldırıldı, tam boy nokta listesi + Detaylı İçe/Dışa Aktar Merkezi butonları eklendi) -->
     <div class="app-modal" id="modal-records">
         <div class="modal-header">
             <span class="modal-title"><i class="fas fa-folder-open" style="color:var(--accent); margin-right:8px;"></i> Projeler & Noktalar</span>
@@ -2538,16 +2627,24 @@
             <select id="project-select" aria-label="Klasör Seçin" onchange="changeProject(this.value)">
                 <option value="Varsayılan">Varsayılan</option>
             </select>
-            <button onclick="createNewProject()" aria-label="Yeni Klasör Ekle" title="Yeni Klasör"><i class="fas fa-folder-plus"></i></button>
-            <button onclick="triggerImportFile()" aria-label="Dosyadan İçe Aktar" title="Dosya İçe Aktar (NCN, KML, TXT, CSV)"><i class="fas fa-file-import" style="color:var(--success);"></i></button>
-            <button onclick="deleteProject()" aria-label="Klasörü Sil" title="Klasörü Sil" style="color:var(--danger);"><i class="fas fa-trash"></i></button>
-            <input type="file" id="import-file-input" accept=".txt,.ncn,.csv,.kml,.geojson,.json" style="display:none;" onchange="handleFileImport(event)">
+            <button onclick="createNewProject()" aria-label="Yeni Klasör Ekle" title="Yeni Klasör Ekle"><i class="fas fa-folder-plus"></i></button>
+            <button onclick="deleteProject()" aria-label="Klasörü Sil" title="Aktif Klasörü Sil" style="color:var(--danger);"><i class="fas fa-trash"></i></button>
+            <input type="file" id="import-file-input" accept=".ncn,.dxf,.kml,.csv,.txt,.xyz,.geojson,.json" style="display:none;" onchange="handleFileImport(event)">
         </div>
-        <div class="search-filter-bar">
-            <input type="text" id="point-search-input" placeholder="🔍 Nokta adı, kod veya koordinat ara..." oninput="updateListUI()">
-            <button id="btn-area-select" onclick="startAreaSelection(false)" style="padding:8px 12px; border-radius:10px; border:1px solid var(--border-light); background:var(--card-bg); color:var(--warning); font-size:0.75rem; font-weight:700; cursor:pointer; white-space:nowrap;" title="Noktaları Seçerek Alan Hesapla (en az 3 nokta)">
+        <!-- v12: Kompakt İçe Aktar / Dışa Aktar / Alan Hesapla Aksiyon Barı -->
+        <div class="records-action-bar">
+            <button type="button" class="btn-io-trigger import-mode" onclick="openDataTransferModal('IMPORT')">
+                <i class="fas fa-file-import"></i> İçe Aktar
+            </button>
+            <button type="button" class="btn-io-trigger export-mode" onclick="openDataTransferModal('EXPORT')">
+                <i class="fas fa-file-export"></i> Dışa Aktar
+            </button>
+            <button type="button" class="btn-io-trigger area-mode" id="btn-area-select" onclick="startAreaSelection(false)" title="Noktaları Seçerek Alan Hesapla (en az 3 nokta)">
                 <i class="fas fa-draw-polygon"></i> Alan
             </button>
+        </div>
+        <div class="search-filter-bar" style="margin-bottom:8px;">
+            <input type="text" id="point-search-input" placeholder="🔍 Nokta adı, kod veya koordinat ara..." oninput="updateListUI()">
         </div>
         <!-- ALAN HESABI İÇİN NOKTA SEÇİM ÇUBUĞU (v3) -->
         <div class="area-select-bar" id="area-select-bar">
@@ -2559,15 +2656,223 @@
             </div>
         </div>
         <div class="modal-body" id="points-list"></div>
-        <div class="export-bar">
-            <div style="font-size:0.68rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">Profesyonel Formatta Dışa Aktar / Paylaş:</div>
-            <div class="export-format-grid">
-                <button class="format-btn" onclick="exportProject('NCN')"><i class="fas fa-drafting-compass"></i> NetCAD (.ncn)</button>
-                <button class="format-btn" onclick="exportProject('DXF')"><i class="fas fa-vector-square"></i> AutoCAD (.dxf)</button>
-                <button class="format-btn" onclick="exportProject('KML')"><i class="fas fa-globe-americas"></i> Earth (.kml)</button>
-                <button class="format-btn" onclick="exportProject('CSV')"><i class="fas fa-file-csv"></i> Excel (.csv)</button>
-                <button class="format-btn" onclick="exportProject('TXT')"><i class="fas fa-file-alt"></i> Metin (.txt)</button>
-                <button class="format-btn" onclick="exportProject('GEOJSON')"><i class="fas fa-code"></i> GeoJSON</button>
+    </div>
+
+    <!-- v12: DETAYLI İÇE & DIŞA AKTARMA MERKEZİ MODALI (TÜM CAD / CBS FORMATLARI DESTEKLİ) -->
+    <div class="app-modal" id="modal-data-transfer">
+        <div class="modal-header">
+            <span class="modal-title" id="data-transfer-modal-title"><i class="fas fa-exchange-alt" style="color:var(--accent); margin-right:8px;"></i> Veri İçe & Dışa Aktarma Merkezi</span>
+            <div style="display:flex; align-items:center; gap:10px;">
+                <button type="button" class="drawer-mini-btn" style="padding:5px 10px; font-size:0.72rem;" onclick="returnToRecordsModal()">
+                    <i class="fas fa-arrow-left"></i> Nokta Listesi
+                </button>
+                <i class="fas fa-times" style="color:var(--text-muted); font-size:1.35rem; cursor:pointer; padding:4px;" onclick="closeModals()"></i>
+            </div>
+        </div>
+        <div class="modal-body" style="display:flex; flex-direction:column; gap:10px;">
+            <div class="io-tabs-bar">
+                <button type="button" class="io-tab-btn import-tab active" id="io-tab-btn-import" onclick="switchDataTransferTab('IMPORT')">
+                    <i class="fas fa-file-import"></i> Detaylı İçe Aktar
+                </button>
+                <button type="button" class="io-tab-btn export-tab" id="io-tab-btn-export" onclick="switchDataTransferTab('EXPORT')">
+                    <i class="fas fa-file-export"></i> Detaylı Dışa Aktar
+                </button>
+            </div>
+
+            <!-- SEKME 1: DETAYLI İÇE AKTARMA (HER FORMATTA İÇE AKTARIM + KOORDİNAT SIRASI & DOM SEÇİMİ) -->
+            <div id="io-pane-import" style="display:flex; flex-direction:column; gap:10px;">
+                <div class="io-settings-box">
+                    <div style="font-size:0.74rem; font-weight:800; color:#34d399; display:flex; align-items:center; justify-content:space-between;">
+                        <span><i class="fas fa-sliders-h"></i> İçe Aktarma & Projeksiyon Ayarları</span>
+                        <span style="font-size:0.65rem; color:var(--text-muted);" id="io-import-active-folder-pill">Hedef: Varsayılan</span>
+                    </div>
+
+                    <div class="io-setting-row">
+                        <label><i class="fas fa-folder"></i> Hedef Klasör Modu</label>
+                        <select class="io-setting-select" id="import-target-folder-mode">
+                            <option value="ACTIVE" selected>Seçili Aktif Klasöre Ekle</option>
+                            <option value="NEW_FROM_FILE">Dosya Adıyla Yeni Klasör Oluştur</option>
+                        </select>
+                    </div>
+
+                    <div class="io-setting-row">
+                        <label><i class="fas fa-sort-numeric-down"></i> Koordinat Sütun Sırası (NCN / TXT / CSV / DXF)</label>
+                        <select class="io-setting-select" id="import-coord-order-select">
+                            <option value="AUTO" selected>Otomatik Algıla (Y/X Sağa-Yukarı veya Enlem/Boylam)</option>
+                            <option value="YX">Y (Sağa) — X (Yukarı) — Z (Kot) [NetCAD / ITRF / ED50]</option>
+                            <option value="XY">X (Yukarı) — Y (Sağa) — Z (Kot) [Ters CAD Sırası]</option>
+                            <option value="LATLON">Enlem (Lat) — Boylam (Lon) — Kot [WGS84]</option>
+                            <option value="LONLAT">Boylam (Lon) — Enlem (Lat) — Kot [CBS / KML Sırası]</option>
+                        </select>
+                    </div>
+
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:8px;">
+                        <div class="io-setting-row">
+                            <label><i class="fas fa-globe"></i> Dilim Orta Meridyeni</label>
+                            <select class="io-setting-select" id="import-dom-override-select">
+                                <option value="AUTO" selected>Aktif DOM (Otomatik)</option>
+                                <option value="27">DOM 27°</option>
+                                <option value="30">DOM 30°</option>
+                                <option value="33">DOM 33°</option>
+                                <option value="36">DOM 36°</option>
+                                <option value="39">DOM 39°</option>
+                                <option value="42">DOM 42°</option>
+                                <option value="45">DOM 45°</option>
+                            </select>
+                        </div>
+                        <div class="io-setting-row">
+                            <label><i class="fas fa-tag"></i> Varsayılan Nokta Kodu</label>
+                            <select class="io-setting-select" id="import-default-category-select">
+                                <option value="Nokta" selected>Standart Nokta</option>
+                                <option value="Poligon">Poligon / Nirengi</option>
+                                <option value="Sinir">Parsel / Sınır Köşesi</option>
+                                <option value="Direk">Ağaç / Direk / Hat</option>
+                                <option value="Bina">Bina / Yapı Köşesi</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="button" class="pwa-install-btn" style="background:linear-gradient(135deg, #10b981, #059669); color:#ffffff; padding:12px; font-size:0.84rem;" onclick="triggerFormatImport('.ncn,.dxf,.kml,.csv,.txt,.xyz,.geojson,.json')">
+                        <i class="fas fa-folder-open"></i> Tüm Formatlardan Dosya Seç ve İçe Aktar
+                    </button>
+                </div>
+
+                <div style="font-size:0.68rem; font-weight:800; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.4px;">
+                    Veya İçe Aktarmak İstediğiniz Formatı Doğrudan Seçin:
+                </div>
+
+                <div class="io-format-grid">
+                    <button type="button" class="io-format-card" onclick="triggerFormatImport('.ncn')">
+                        <div class="io-format-card-top">
+                            <span class="io-format-title"><i class="fas fa-drafting-compass" style="color:#34d399;"></i> NetCAD</span>
+                            <span class="io-format-ext">.ncn</span>
+                        </div>
+                        <div class="io-format-desc">NetCAD nokta dosyası (Ad Y X Z Kod formatı)</div>
+                    </button>
+
+                    <button type="button" class="io-format-card" onclick="triggerFormatImport('.dxf')">
+                        <div class="io-format-card-top">
+                            <span class="io-format-title"><i class="fas fa-vector-square" style="color:#38bdf8;"></i> AutoCAD DXF</span>
+                            <span class="io-format-ext">.dxf</span>
+                        </div>
+                        <div class="io-format-desc">POINT, TEXT, LWPOLYLINE ve POLYLINE köşeleri</div>
+                    </button>
+
+                    <button type="button" class="io-format-card" onclick="triggerFormatImport('.kml')">
+                        <div class="io-format-card-top">
+                            <span class="io-format-title"><i class="fas fa-globe-americas" style="color:#f59e0b;"></i> Google Earth</span>
+                            <span class="io-format-ext">.kml</span>
+                        </div>
+                        <div class="io-format-desc">Placemark nokta, parsel poligon ve çizgi köşeleri</div>
+                    </button>
+
+                    <button type="button" class="io-format-card" onclick="triggerFormatImport('.csv')">
+                        <div class="io-format-card-top">
+                            <span class="io-format-title"><i class="fas fa-file-csv" style="color:#22c55e;"></i> Excel Tablo</span>
+                            <span class="io-format-ext">.csv</span>
+                        </div>
+                        <div class="io-format-desc">Noktalı virgül veya virgül ayrılmış koordinat listesi</div>
+                    </button>
+
+                    <button type="button" class="io-format-card" onclick="triggerFormatImport('.txt,.xyz')">
+                        <div class="io-format-card-top">
+                            <span class="io-format-title"><i class="fas fa-file-alt" style="color:#a78bfa;"></i> Metin / Ham XYZ</span>
+                            <span class="io-format-ext">.txt / .xyz</span>
+                        </div>
+                        <div class="io-format-desc">Boşluk/Tab ayrılmış koordinat veya tam yedek (.txt)</div>
+                    </button>
+
+                    <button type="button" class="io-format-card" onclick="triggerFormatImport('.geojson,.json')">
+                        <div class="io-format-card-top">
+                            <span class="io-format-title"><i class="fas fa-code" style="color:#f472b6;"></i> GeoJSON / Yedek</span>
+                            <span class="io-format-ext">.geojson / .json</span>
+                        </div>
+                        <div class="io-format-desc">CBS FeatureCollection veya AZİMUT Sistem Yedeği</div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- SEKME 2: DETAYLI DIŞA AKTARMA (HER FORMATTA DIŞA AKTARIM VE PAYLAŞIM) -->
+            <div id="io-pane-export" style="display:none; flex-direction:column; gap:10px;">
+                <div class="io-settings-box">
+                    <div style="font-size:0.74rem; font-weight:800; color:var(--accent); display:flex; align-items:center; justify-content:space-between;">
+                        <span><i class="fas fa-folder-open"></i> Dışa Aktarılacak Klasör & Kapsam</span>
+                        <span style="font-size:0.66rem; color:var(--success); font-family:'JetBrains Mono',monospace;" id="io-export-point-count-pill">0 Nokta</span>
+                    </div>
+                    <div class="io-setting-row">
+                        <label>Aktarılacak Proje Klasörü Seçin</label>
+                        <select class="io-setting-select" id="export-target-folder-select" onchange="onExportTargetFolderChange(this.value)">
+                        </select>
+                    </div>
+                </div>
+
+                <div style="font-size:0.68rem; font-weight:800; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.4px;">
+                    Dışa Aktarmak veya Paylaşmak İstediğiniz Formatı Seçin:
+                </div>
+
+                <div class="io-format-grid">
+                    <button type="button" class="io-format-card" onclick="exportProject('NCN')">
+                        <div class="io-format-card-top">
+                            <span class="io-format-title"><i class="fas fa-drafting-compass" style="color:#34d399;"></i> NetCAD</span>
+                            <span class="io-format-ext">.ncn</span>
+                        </div>
+                        <div class="io-format-desc">NetCAD uyumlu Sağa (Y), Yukarı (X), Kot (Z) ve Kod</div>
+                    </button>
+
+                    <button type="button" class="io-format-card" onclick="exportProject('DXF')">
+                        <div class="io-format-card-top">
+                            <span class="io-format-title"><i class="fas fa-vector-square" style="color:#38bdf8;"></i> AutoCAD</span>
+                            <span class="io-format-ext">.dxf</span>
+                        </div>
+                        <div class="io-format-desc">CAD katmanlı POINT ve TEXT çizim dosyası</div>
+                    </button>
+
+                    <button type="button" class="io-format-card" onclick="exportProject('KML')">
+                        <div class="io-format-card-top">
+                            <span class="io-format-title"><i class="fas fa-globe-americas" style="color:#f59e0b;"></i> Google Earth</span>
+                            <span class="io-format-ext">.kml</span>
+                        </div>
+                        <div class="io-format-desc">3B Koordinat ve öznitelik balonlu KML dosyası</div>
+                    </button>
+
+                    <button type="button" class="io-format-card" onclick="exportProject('CSV')">
+                        <div class="io-format-card-top">
+                            <span class="io-format-title"><i class="fas fa-file-csv" style="color:#22c55e;"></i> Excel Tablo</span>
+                            <span class="io-format-ext">.csv</span>
+                        </div>
+                        <div class="io-format-desc">Türkçe karakter uyumlu (UTF-8 BOM) Excel listesi</div>
+                    </button>
+
+                    <button type="button" class="io-format-card" onclick="exportProject('TXT')">
+                        <div class="io-format-card-top">
+                            <span class="io-format-title"><i class="fas fa-file-alt" style="color:#a78bfa;"></i> Metin Listesi</span>
+                            <span class="io-format-ext">.txt</span>
+                        </div>
+                        <div class="io-format-desc">Sekme (Tab) ayrılmış Ad, Y, X, Z koordinat metni</div>
+                    </button>
+
+                    <button type="button" class="io-format-card" onclick="exportProject('GEOJSON')">
+                        <div class="io-format-card-top">
+                            <span class="io-format-title"><i class="fas fa-code" style="color:#f472b6;"></i> CBS GeoJSON</span>
+                            <span class="io-format-ext">.geojson</span>
+                        </div>
+                        <div class="io-format-desc">QGIS, ArcGIS ve Web CBS uyumlu öznitelikli veri</div>
+                    </button>
+                </div>
+
+                <div class="io-settings-box" style="margin-top:4px; margin-bottom:0;">
+                    <div style="font-size:0.72rem; font-weight:800; color:var(--text-main);">
+                        <i class="fas fa-database" style="color:var(--success);"></i> Tüm Klasörleri Tek Seferde Yedekle
+                    </div>
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:8px;">
+                        <button type="button" class="format-btn" style="padding:10px;" onclick="exportAllData()">
+                            <i class="fas fa-file-export"></i> Tüm Projeler (.txt)
+                        </button>
+                        <button type="button" class="format-btn" style="padding:10px; border-color:rgba(16,185,129,0.45); color:#34d399;" onclick="exportJSONBackup()">
+                            <i class="fas fa-database"></i> Sistem Yedeği (.json)
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -2892,10 +3197,17 @@
                     </button>
                 </div>
 
-                <button class="logout-btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Oturumu Kapat (Çıkış Yap)</button>
+                <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                    <button type="button" class="drawer-mini-btn" style="flex:1; padding:10px; font-size:0.78rem; border-color:rgba(0,229,255,0.4); color:var(--accent);" onclick="switchGoogleAccount()">
+                        <i class="fab fa-google" style="color:#ea4335;"></i> Farklı Gmail Hesabı Seç
+                    </button>
+                    <button type="button" class="logout-btn" style="flex:1; margin:0;" onclick="logout()">
+                        <i class="fas fa-sign-out-alt"></i> Oturumu Kapat (Çıkış Yap)
+                    </button>
+                </div>
             </div>
 
-            <!-- v11: REFERANS HAKLARIM (Admin tarafından tanımlanan kontenjan veya mevcut eski 3 haklar) -->
+            <!-- v12: REFERANS HAKLARIM (Admin tarafından tanımlanan kontenjan veya mevcut eski 3 haklar) -->
             <div class="referral-box-card" id="profile-referral-card">
                 <div class="referral-header-row">
                     <div>
@@ -2915,13 +3227,23 @@
             </div>
 
             <div class="drawer-card" style="gap:10px; margin-bottom:14px;">
-                <h4 style="margin:0; font-size:0.85rem; color:var(--text-main);">Veri Yedekleme & Geri Yükleme</h4>
-                <button class="pwa-install-btn" style="background:rgba(0, 229, 255, 0.14); color:var(--accent); border:1px solid rgba(0, 229, 255, 0.35);" onclick="exportAllData()">
+                <div style="display:flex; align-items:center; justify-content:space-between; gap:6px;">
+                    <h4 style="margin:0; font-size:0.85rem; color:var(--text-main);"><i class="fas fa-database" style="color:var(--accent); margin-right:5px;"></i> Veri Yedekleme & Geri Yükleme</h4>
+                    <span style="font-size:0.64rem; color:var(--success); font-weight:700;">Yedek Al & Yükle</span>
+                </div>
+                <button type="button" class="pwa-install-btn" style="background:rgba(16, 185, 129, 0.14); color:var(--success); border:1px solid rgba(16, 185, 129, 0.38);" onclick="exportJSONBackup()">
+                    <i class="fas fa-download"></i> Tam Sistem Yedeği Al (.json)
+                </button>
+                <button type="button" class="pwa-install-btn" style="background:linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(234, 88, 12, 0.18)); color:#fbbf24; border:1px solid rgba(245, 158, 11, 0.50);" onclick="triggerSystemBackupRestore()">
+                    <i class="fas fa-upload"></i> Tam Sistem Yedeği Yükle / Geri Yükle (.json / .txt)
+                </button>
+                <button type="button" class="pwa-install-btn" style="background:rgba(0, 229, 255, 0.14); color:var(--accent); border:1px solid rgba(0, 229, 255, 0.35);" onclick="exportAllData()">
                     <i class="fas fa-file-export"></i> Tüm Projeleri Tek Dosyada İndir (.txt)
                 </button>
-                <button class="pwa-install-btn" style="background:rgba(16, 185, 129, 0.14); color:var(--success); border:1px solid rgba(16, 185, 129, 0.35);" onclick="exportJSONBackup()">
-                    <i class="fas fa-database"></i> Tam Sistem Yedeği Al (.json)
+                <button type="button" class="drawer-mini-btn accent" style="width:100%; padding:9px;" onclick="openDataTransferModal('IMPORT')">
+                    <i class="fas fa-exchange-alt"></i> Detaylı CAD / CBS İçe & Dışa Aktarma Merkezini Aç
                 </button>
+                <input type="file" id="restore-backup-file-input" accept=".json,.txt,.ncn,.csv,.kml,.dxf,.geojson" style="display:none;" onchange="handleBackupRestoreFile(event)">
             </div>
 
             <!-- Profil İçi KVKK Bilgi Kartı -->
@@ -3287,6 +3609,8 @@
         const auth = firebase.auth();
         const db = firebase.firestore();
         const provider = new firebase.auth.GoogleAuthProvider();
+        // v12: Kullanıcı her giriş yaptığında veya farklı kullanıcı ile giriş yap dediğinde Google'ın "Hesap Seçin / Başka bir hesap kullan" penceresini ZORUNLU olarak açmasını sağlar
+        provider.setCustomParameters({ prompt: 'select_account' });
 
         const STORAGE_KEY = 'geoitrf_pro_projects_v2';
         const SETTINGS_KEY = 'geoitrf_pro_settings_v2';
@@ -3760,6 +4084,8 @@
             const isDemo = isUserDemoActive(p);
             const demoRemText = formatDemoRemaining(p.demoExpiresAt, p.demoDisabledByAdmin);
 
+            const logoutChipHtml = `<button type="button" onclick="logout()" style="margin-top:4px; align-self:center; padding:4px 10px; border-radius:8px; border:1px solid rgba(239,68,68,0.45); background:rgba(239,68,68,0.16); color:#fca5a5; font-size:0.66rem; font-weight:800; cursor:pointer;"><i class="fas fa-sign-out-alt"></i> Oturumu Kapat (Çıkış Yap)</button>`;
+
             splashBanner.style.display = 'flex';
             if (isAdmin) {
                 splashBanner.style.background = 'rgba(245, 158, 11, 0.16)';
@@ -3767,6 +4093,7 @@
                 splashBanner.innerHTML = `
                     <div style="font-weight:800; color:#fde68a;"><i class="fas fa-crown"></i> Oturum Açık: ${uName} (ANA YÖNETİCİ / ADMİN)</div>
                     <div style="font-size:0.68rem; color:#fef3c7;">${escapeHtmlSafe(uEmail)} • Tüm Sistem, Referans ve Demo Kontrolleri Aktif</div>
+                    ${logoutChipHtml}
                 `;
             } else if (isActive) {
                 splashBanner.style.background = 'rgba(16, 185, 129, 0.14)';
@@ -3774,6 +4101,7 @@
                 splashBanner.innerHTML = `
                     <div style="font-weight:800; color:#6ee7b7;"><i class="fas fa-check-circle"></i> Oturum Açık: ${uName} (AKTİF KULLANICI)</div>
                     <div style="font-size:0.68rem; color:#d1fae5;">${escapeHtmlSafe(uEmail)} • Tüm Mühendislik Özellikleri Sınırsız Açık</div>
+                    ${logoutChipHtml}
                 `;
             } else if (isDemo) {
                 splashBanner.style.background = 'rgba(0, 229, 255, 0.13)';
@@ -3781,6 +4109,7 @@
                 splashBanner.innerHTML = `
                     <div style="font-weight:800; color:#7dd3fc;"><i class="fas fa-hourglass-half"></i> Oturum Açık: ${uName} (3 GÜNLÜK DEMO KULLANIMI)</div>
                     <div style="font-size:0.68rem; color:#e0f2fe;">${escapeHtmlSafe(uEmail)} • Kalan Demo Süresi: <b>${escapeHtmlSafe(demoRemText)}</b></div>
+                    ${logoutChipHtml}
                 `;
             } else {
                 splashBanner.style.background = 'rgba(239, 68, 68, 0.14)';
@@ -3788,11 +4117,12 @@
                 splashBanner.innerHTML = `
                     <div style="font-weight:800; color:#fca5a5;"><i class="fas fa-user-lock"></i> Oturum Açık: ${uName} (PASİF KULLANICI)</div>
                     <div style="font-size:0.68rem; color:#fee2e2;">${escapeHtmlSafe(uEmail)} • 3 Günlük Demo Süresi Doldu (Referans / Aktivasyon Gerekli)</div>
+                    ${logoutChipHtml}
                 `;
             }
 
             if (enterBtnText) enterBtnText.innerText = 'Haritayı Aç ve Başla';
-            if (googleBtnText) googleBtnText.innerText = 'Farklı Gmail Hesabı İle Giriş Yap';
+            if (googleBtnText) googleBtnText.innerText = 'Farklı Gmail Hesabı İle Giriş Yap (Hesap Seç)';
             if (googleBtnEl) googleBtnEl.disabled = false;
         }
 
@@ -3827,11 +4157,8 @@
             });
         }
 
-        // Canlı 3 Günlük Demo Sayacı (Saniyede bir Ana Koordinat Altı HUD Barı, Yan Menü, Profil, Giriş Ekranı ve Admin/Ağ kartlarını günceller)
+        // v12: Canlı 3 Günlük Demo Sayacı (Sol Yan Menü, Profil, Giriş Ekranı ve Admin/Ağ kartlarını saniyede bir günceller; Z/Semt/Hız altında ekranı daraltan şerit tamamen kaldırılmıştır)
         function updateLiveDemoCountdownElements() {
-            const hudStrip = document.getElementById('hud-membership-strip');
-            const hudStatusLabel = document.getElementById('hud-status-left-text') || document.getElementById('hud-member-status-label');
-            const hudTimerPill = document.getElementById('hud-demo-countdown-pill');
             const dTimerRow = document.getElementById('drawer-demo-timer-row') || document.getElementById('drawer-demo-countdown-bar');
             const dTimerText = document.getElementById('drawer-demo-countdown-text') || document.getElementById('drawer-demo-timer-val');
             const pTimerBox = document.getElementById('profile-demo-timer-box') || document.getElementById('profile-demo-countdown-bar');
@@ -3841,15 +4168,6 @@
             updateLiveAdminAndNetworkDemoTimers();
 
             if (!auth.currentUser) {
-                // Giriş yapmamış (Misafir) kullanıcı
-                if (hudStrip) hudStrip.style.display = 'flex';
-                if (hudStatusLabel) {
-                    hudStatusLabel.innerHTML = `<i class="fas fa-eye" style="color:var(--accent);"></i> <span style="color:#e2e8f0;">MİSAFİR HARİTA GÖRÜNÜMÜ (Giriş Yapılmadı)</span>`;
-                }
-                if (hudTimerPill) {
-                    hudTimerPill.className = 'hud-demo-timer-pill';
-                    hudTimerPill.innerHTML = `<i class="fab fa-google"></i> Giriş Yap (3 Gün Demo)`;
-                }
                 if (dTimerRow) dTimerRow.style.display = 'none';
                 if (pTimerBox) pTimerBox.style.display = 'none';
                 return;
@@ -3860,32 +4178,7 @@
             const isActive = Boolean(p.isActive || isAdmin);
             const demoActive = isUserDemoActive(p);
 
-            if (isAdmin) {
-                if (hudStrip) hudStrip.style.display = 'flex';
-                if (hudStatusLabel) {
-                    hudStatusLabel.innerHTML = `<i class="fas fa-crown" style="color:#fbbf24;"></i> <span style="color:#fde68a;">ANA YÖNETİCİ (ADMİN) • TAM YETKİ AÇIK</span>`;
-                }
-                if (hudTimerPill) {
-                    hudTimerPill.className = 'hud-demo-timer-pill admin-perm';
-                    hudTimerPill.innerHTML = `<i class="fas fa-sliders-h"></i> Admin Kontrol Paneli`;
-                }
-                if (dTimerRow) dTimerRow.style.display = 'none';
-                if (pTimerBox) pTimerBox.style.display = 'none';
-                wasDemoActiveLastTick = false;
-                return;
-            }
-
-            if (isActive) {
-                const remQ = Math.max(0, Number(p.remainingReferrals || 0));
-                const totQ = Math.max(0, Number(p.referralQuota || 0));
-                if (hudStrip) hudStrip.style.display = 'flex';
-                if (hudStatusLabel) {
-                    hudStatusLabel.innerHTML = `<i class="fas fa-check-circle" style="color:#34d399;"></i> <span style="color:#6ee7b7;">AKTİF KULLANICI • TÜM ÖZELLİKLER AÇIK (Ref: ${remQ}/${totQ})</span>`;
-                }
-                if (hudTimerPill) {
-                    hudTimerPill.className = 'hud-demo-timer-pill active-perm';
-                    hudTimerPill.innerHTML = `<i class="fas fa-unlock"></i> Sınırsız Erişim`;
-                }
+            if (isAdmin || isActive) {
                 if (dTimerRow) dTimerRow.style.display = 'none';
                 if (pTimerBox) pTimerBox.style.display = 'none';
                 wasDemoActiveLastTick = false;
@@ -3894,19 +4187,11 @@
 
             // Pasif Kullanıcı: 3 Günlük Demo Süresi Devam Ediyor mu yoksa Doldu mu?
             const timeStr = formatDemoRemaining(p.demoExpiresAt, p.demoDisabledByAdmin);
-            if (hudStrip) hudStrip.style.display = 'flex';
             if (dTimerRow) dTimerRow.style.display = 'flex';
             if (pTimerBox) pTimerBox.style.display = 'flex';
 
             if (demoActive) {
                 wasDemoActiveLastTick = true;
-                if (hudStatusLabel) {
-                    hudStatusLabel.innerHTML = `<i class="fas fa-hourglass-half" style="color:#38bdf8;"></i> <span style="color:#bae6fd;">3 GÜNLÜK DEMO KULLANIMI AKTİF (Tüm Özellikler Açık)</span>`;
-                }
-                if (hudTimerPill) {
-                    hudTimerPill.className = 'hud-demo-timer-pill';
-                    hudTimerPill.innerHTML = `<i class="fas fa-stopwatch"></i> Kalan: ${timeStr}`;
-                }
                 if (dTimerText) {
                     dTimerText.style.color = '#7dd3fc';
                     dTimerText.innerText = timeStr;
@@ -3921,13 +4206,6 @@
                     wasDemoActiveLastTick = false;
                     refreshUserProfileUI();
                     showPassiveWallModal("3 Günlük Demo Süreniz Sona Erdi");
-                }
-                if (hudStatusLabel) {
-                    hudStatusLabel.innerHTML = `<i class="fas fa-user-lock" style="color:#f87171;"></i> <span style="color:#fca5a5;">PASİF KULLANICI (3 GÜNLÜK DEMO SÜRESİ DOLDU)</span>`;
-                }
-                if (hudTimerPill) {
-                    hudTimerPill.className = 'hud-demo-timer-pill expired';
-                    hudTimerPill.innerHTML = `<i class="fas fa-lock"></i> Aktivasyon Gerekli`;
                 }
                 if (dTimerText) {
                     dTimerText.style.color = '#fca5a5';
@@ -6227,22 +6505,43 @@
             }
         });
 
-        function loginWithGoogle() {
+        function loginWithGoogle(forceAccountSelect = true) {
             closeGuestLoginModal();
             const btnText = document.getElementById('gate-login-btn-text');
             const btnEl = document.getElementById('btn-gate-google-login');
-            if (btnText) btnText.innerText = 'Google Hesabına Bağlanılıyor...';
+            if (btnText) btnText.innerText = 'Google Hesap Seçici Açılıyor...';
             if (btnEl) btnEl.disabled = true;
 
-            auth.signInWithPopup(provider).catch(err => {
-                if (btnText) btnText.innerText = 'Gmail ile Giriş Yap (İsteğe Bağlı)';
+            // v12: Her girişte ve hesap değiştirmede Google'ın "Hesap Seçin / Başka bir hesap kullan" ekranını zorunlu olarak açar
+            const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+            googleAuthProvider.setCustomParameters({
+                prompt: forceAccountSelect ? 'select_account' : 'select_account'
+            });
+
+            auth.signInWithPopup(googleAuthProvider).then(() => {
+                updateSplashScreenAuthUI();
+                updateLiveDemoCountdownElements();
+            }).catch(err => {
+                updateSplashScreenAuthUI();
                 if (btnEl) btnEl.disabled = false;
                 if (err && (err.code === 'auth/popup-blocked' || err.code === 'auth/operation-not-supported-in-this-environment')) {
-                    auth.signInWithRedirect(provider);
+                    auth.signInWithRedirect(googleAuthProvider);
+                    return;
+                }
+                if (err && (err.code === 'auth/popup-closed-by-user' || err.code === 'auth/cancelled-popup-request')) {
+                    showToast("Hesap seçimi iptal edildi", "fa-info-circle");
                     return;
                 }
                 showToast("Giriş hatası: " + (err.message || "Lütfen tekrar deneyin"), "fa-exclamation-triangle");
             });
+        }
+
+        function switchGoogleAccount() {
+            const drawer = document.getElementById('side-drawer');
+            const overlay = document.getElementById('drawer-overlay');
+            if (drawer) drawer.classList.remove('show');
+            if (overlay) overlay.classList.remove('show');
+            loginWithGoogle(true);
         }
 
         function logout() {
@@ -6252,9 +6551,12 @@
             const overlay = document.getElementById('drawer-overlay');
             if (drawer) drawer.classList.remove('show');
             if (overlay) overlay.classList.remove('show');
+            provider.setCustomParameters({ prompt: 'select_account' });
             auth.signOut().then(() => {
                 refreshUserProfileUI();
-                showToast("Oturum kapatıldı. Harita ve katmanları misafir modunda görüntüleyebilirsiniz.", "fa-info-circle");
+                updateSplashScreenAuthUI();
+                updateLiveDemoCountdownElements();
+                showToast("Oturum kapatıldı. Yeni girişte farklı Gmail hesabı seçebilirsiniz.", "fa-info-circle");
             });
         }
 
@@ -9247,21 +9549,114 @@
             }
         }
 
+        // --- v12: DETAYLI İÇE & DIŞA AKTARMA MERKEZİ VE YEDEK GERİ YÜKLEME SİSTEMİ ---
+        function openDataTransferModal(mode = 'IMPORT') {
+            if (!requireActiveMembership('CAD / CBS Veri İçe & Dışa Aktarma Merkezi')) return;
+            document.querySelectorAll('.app-modal').forEach(el => el.classList.remove('show'));
+            const modal = document.getElementById('modal-data-transfer');
+            if (modal) modal.classList.add('show');
+            refreshDataTransferModalUI();
+            switchDataTransferTab(mode);
+        }
+
+        function returnToRecordsModal() {
+            document.querySelectorAll('.app-modal').forEach(el => el.classList.remove('show'));
+            const recModal = document.getElementById('modal-records');
+            if (recModal) recModal.classList.add('show');
+            updateDropdownUI();
+            updateListUI();
+        }
+
+        function refreshDataTransferModalUI() {
+            const folderPill = document.getElementById('io-import-active-folder-pill');
+            if (folderPill) folderPill.innerText = `Aktif Klasör: ${activeProject}`;
+
+            const expSelect = document.getElementById('export-target-folder-select');
+            if (expSelect) {
+                let totalPts = 0;
+                let optsHtml = '';
+                for (let projName in projectsData) {
+                    const cnt = (projectsData[projName]?.points || []).length;
+                    totalPts += cnt;
+                    const sel = (projName === activeProject) ? 'selected' : '';
+                    optsHtml += `<option value="${escapeHtmlSafe(projName)}" ${sel}>📂 ${escapeHtmlSafe(projName)} (${cnt} Nokta)</option>`;
+                }
+                optsHtml += `<option value="__ALL__">📦 Tüm Klasörler Birlikte (${totalPts} Nokta)</option>`;
+                expSelect.innerHTML = optsHtml;
+                onExportTargetFolderChange(expSelect.value || activeProject);
+            }
+        }
+
+        function onExportTargetFolderChange(val) {
+            const countPill = document.getElementById('io-export-point-count-pill');
+            if (!countPill) return;
+            if (val === '__ALL__') {
+                const total = Object.values(projectsData).reduce((acc, p) => acc + ((p && p.points) ? p.points.length : 0), 0);
+                countPill.innerText = `Toplam ${total} Nokta`;
+            } else {
+                const pts = (projectsData[val] && projectsData[val].points) ? projectsData[val].points.length : 0;
+                countPill.innerText = `${pts} Nokta Seçili`;
+            }
+        }
+
+        function switchDataTransferTab(mode = 'IMPORT') {
+            const impBtn = document.getElementById('io-tab-btn-import');
+            const expBtn = document.getElementById('io-tab-btn-export');
+            const impPane = document.getElementById('io-pane-import');
+            const expPane = document.getElementById('io-pane-export');
+            refreshDataTransferModalUI();
+            if (mode === 'EXPORT') {
+                if (impBtn) impBtn.classList.remove('active');
+                if (expBtn) expBtn.classList.add('active');
+                if (impPane) impPane.style.display = 'none';
+                if (expPane) expPane.style.display = 'flex';
+            } else {
+                if (expBtn) expBtn.classList.remove('active');
+                if (impBtn) impBtn.classList.add('active');
+                if (expPane) expPane.style.display = 'none';
+                if (impPane) impPane.style.display = 'flex';
+            }
+        }
+
+        function getPointsForSelectedExportScope() {
+            const expSelect = document.getElementById('export-target-folder-select');
+            const chosenScope = expSelect && expSelect.value ? expSelect.value : activeProject;
+            if (chosenScope === '__ALL__') {
+                const allPts = [];
+                for (let projName in projectsData) {
+                    const list = (projectsData[projName] && projectsData[projName].points) ? projectsData[projName].points : [];
+                    list.forEach(p => {
+                        allPts.push({
+                            ...p,
+                            name: Object.keys(projectsData).length > 1 ? `${projName}_${p.name}` : p.name
+                        });
+                    });
+                }
+                return { points: allPts, label: 'Azimut_Tum_Projeler' };
+            }
+            const targetFolder = projectsData[chosenScope] ? chosenScope : activeProject;
+            return {
+                points: (projectsData[targetFolder] && projectsData[targetFolder].points) ? projectsData[targetFolder].points : [],
+                label: targetFolder
+            };
+        }
+
         function exportProject(format) {
-            let points = projectsData[activeProject].points;
+            const scope = getPointsForSelectedExportScope();
+            let points = scope.points;
             if (!points || points.length === 0) {
                 showToast("Dışa aktarılacak nokta bulunamadı!", "fa-exclamation-circle");
                 return;
             }
-            const safeProj = activeProject.replace(/\s+/g, '_');
+            const safeProj = String(scope.label || activeProject).replace(/\s+/g, '_');
 
             if (format === 'NCN') {
                 let ncn = "";
                 points.forEach(p => {
                     const proj = calculateProjected(p.lat, p.lon);
                     const z = (p.alt || 0).toFixed(3);
-                    const cleanName = p.name.replace(/\s+/g, '_');
-                    const code = (p.category || "NOKTA").replace(/\s+/g, '_');
+                    const cleanName = String(p.name || 'P').replace(/\s+/g, '_');
+                    const code = String(p.category || "NOKTA").replace(/\s+/g, '_');
                     ncn += `${cleanName} ${proj.y.toFixed(3)} ${proj.x.toFixed(3)} ${z} ${code}\r\n`;
                 });
                 downloadOrShareFile(ncn, `${safeProj}.ncn`);
@@ -9279,7 +9674,7 @@
                     const proj = calculateProjected(p.lat, p.lon);
                     return `
         <Placemark>
-            <name>${p.name}</name>
+            <name>${escapeHtmlSafe(p.name)}</name>
             <description><![CDATA[Kategori: ${p.category || 'Nokta'}<br>Y (Sağa): ${proj.y.toFixed(3)}<br>X (Yukarı): ${proj.x.toFixed(3)}<br>Z (Kot): ${(p.alt||0).toFixed(2)} m<br>Not: ${p.desc || '-'}]]></description>
             <Point><coordinates>${p.lon.toFixed(7)},${p.lat.toFixed(7)},${(p.alt||0).toFixed(2)}</coordinates></Point>
         </Placemark>`;
@@ -9288,7 +9683,7 @@
                 let kml = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
     <Document>
-        <name>${activeProject} - AZİMUT Pro</name>${placemarks}
+        <name>${escapeHtmlSafe(scope.label)} - AZİMUT Pro</name>${placemarks}
     </Document>
 </kml>`;
                 downloadOrShareFile(kml, `${safeProj}.kml`, "application/vnd.google-earth.kml+xml");
@@ -9309,7 +9704,7 @@
             else if (format === 'GEOJSON') {
                 const geojson = {
                     type: "FeatureCollection",
-                    name: activeProject,
+                    name: scope.label,
                     features: points.map(p => {
                         const proj = calculateProjected(p.lat, p.lon);
                         return {
@@ -9336,7 +9731,7 @@
                 let txtContent = "";
                 points.forEach(p => {
                     const proj = calculateProjected(p.lat, p.lon);
-                    txtContent += `${p.name}\t${proj.y.toFixed(3)}\t${proj.x.toFixed(3)}\t${(p.alt||0).toFixed(2)}\n`;
+                    txtContent += `${p.name}\t${proj.y.toFixed(3)}\t${proj.x.toFixed(3)}\t${(p.alt||0).toFixed(2)}\t${p.category || 'Nokta'}\n`;
                 });
                 downloadOrShareFile(txtContent, `${safeProj}_olcumleri.txt`);
             }
@@ -9346,7 +9741,7 @@
             let txtContent = "AZIMUT PRO - TUM PROJELER YEDEGI\n=================================\n";
             for (let projName in projectsData) {
                 txtContent += `\nKLASOR: ${projName}\n`;
-                projectsData[projName].points.forEach(p => {
+                (projectsData[projName].points || []).forEach(p => {
                     const proj = calculateProjected(p.lat, p.lon);
                     txtContent += `${p.name}\tY:${proj.y.toFixed(3)}\tX:${proj.x.toFixed(3)}\tZ:${(p.alt||0).toFixed(2)}\tE:${p.lat.toFixed(6)}\tB:${p.lon.toFixed(6)}\tKod:${p.category||'Nokta'}\n`;
                 });
@@ -9359,141 +9754,623 @@
             downloadOrShareFile(jsonStr, "Azimut_Pro_SistemYedegi.json", "application/json");
         }
 
-        // --- DOSYA İÇE AKTARMA (IMPORT: NCN, TXT, CSV, KML, GEOJSON) ---
-        function triggerImportFile() {
-            if (!requireActiveMembership('Dosyadan Nokta İçe Aktarma')) return;
-            document.getElementById('import-file-input').value = "";
-            document.getElementById('import-file-input').click();
+        // --- PROFİL İÇİ TAM SİSTEM YEDEĞİ GERİ YÜKLEME (.json / .txt) ---
+        function triggerSystemBackupRestore() {
+            if (!requireActiveMembership('Tam Sistem Yedeği Geri Yükleme')) return;
+            const input = document.getElementById('restore-backup-file-input');
+            if (!input) return;
+            input.value = '';
+            input.click();
         }
 
-        function handleFileImport(event) {
-            const file = event.target.files[0];
+        async function handleBackupRestoreFile(event) {
+            const file = event.target.files && event.target.files[0];
             if (!file) return;
-            const reader = new FileReader();
             const ext = file.name.split('.').pop().toLowerCase();
 
-            reader.onload = function(e) {
-                const content = e.target.result;
-                let importedCount = 0;
-                const defaultDom = currentDOM || (appSettings.domMode !== 'AUTO' ? parseInt(appSettings.domMode, 10) : 33);
+            // Eğer kullanıcı NCN, DXF, KML, CSV, GeoJSON seçtiyse doğrudan genel içe aktarma motoruna yönlendir
+            if (['ncn', 'dxf', 'kml', 'csv', 'geojson'].includes(ext)) {
+                handleFileImport(event);
+                return;
+            }
 
+            const reader = new FileReader();
+            reader.onload = async function(e) {
+                const content = String(e.target.result || '');
                 try {
-                    if (ext === 'geojson' || ext === 'json') {
+                    // 1) JSON Tam Sistem Yedeği Kontrolü
+                    if (ext === 'json' || content.trim().startsWith('{')) {
                         const parsed = JSON.parse(content);
-                        if (parsed.features && Array.isArray(parsed.features)) {
-                            parsed.features.forEach((f, idx) => {
-                                if (f.geometry && f.geometry.type === 'Point') {
-                                    const [lon, lat, alt] = f.geometry.coordinates;
-                                    const proj = calculateProjected(lat, lon);
-                                    projectsData[activeProject].points.push({
-                                        id: Date.now() + idx,
-                                        name: (f.properties && f.properties.name) || `IMP_${idx+1}`,
-                                        category: (f.properties && f.properties.category) || 'Nokta',
-                                        desc: 'GeoJSON İçe Aktarım',
-                                        lat, lon, alt: alt || 0,
-                                        y_saga: proj.y, x_yukari: proj.x, dom: proj.dom
-                                    });
-                                    importedCount++;
-                                }
-                            });
-                        } else if (typeof parsed === 'object') {
-                            for (let k in parsed) {
-                                if (parsed[k] && Array.isArray(parsed[k].points)) {
-                                    projectsData[k] = parsed[k];
-                                    importedCount += parsed[k].points.length;
-                                }
+                        if (parsed && typeof parsed === 'object' && !Array.isArray(parsed.features)) {
+                            const folderKeys = Object.keys(parsed).filter(k => parsed[k] && Array.isArray(parsed[k].points));
+                            if (folderKeys.length > 0) {
+                                const totalRestoredPts = folderKeys.reduce((s, k) => s + parsed[k].points.length, 0);
+                                const mergeChoice = await showCustomDialog({
+                                    title: "Tam Sistem Yedeği Geri Yükle",
+                                    message: `Yedek dosyasında ${folderKeys.length} klasör ve toplam ${totalRestoredPts} nokta bulundu.\n\n"Tamam" derseniz mevcut klasörlerinizle birleştirilir, "İptal" derseniz işlem vazgeçilir.`,
+                                    confirmText: "Yedeği Geri Yükle",
+                                    danger: false
+                                });
+                                if (!mergeChoice) return;
+
+                                folderKeys.forEach(k => {
+                                    const incomingPts = parsed[k].points || [];
+                                    if (!projectsData[k]) {
+                                        projectsData[k] = {
+                                            points: incomingPts,
+                                            autoCounter: parsed[k].autoCounter || (incomingPts.length + 1)
+                                        };
+                                    } else {
+                                        const existingIds = new Set((projectsData[k].points || []).map(pt => pt.id));
+                                        incomingPts.forEach(pt => {
+                                            if (!existingIds.has(pt.id)) {
+                                                projectsData[k].points.push(pt);
+                                            }
+                                        });
+                                        projectsData[k].autoCounter = Math.max(projectsData[k].autoCounter || 1, (projectsData[k].points.length + 1));
+                                    }
+                                });
+                                activeProject = folderKeys[0] || activeProject || "Varsayılan";
+                                syncData();
+                                updateDropdownUI();
+                                updateListUI();
+                                renderActiveProjectMarkers();
+                                updateStats();
+                                showToast(`${folderKeys.length} klasör (${totalRestoredPts} nokta) yedekten geri yüklendi!`, "fa-check-circle");
+                                return;
                             }
                         }
                     }
-                    else if (ext === 'kml') {
-                        const parser = new DOMParser();
-                        const xml = parser.parseFromString(content, "text/xml");
-                        const placemarks = xml.getElementsByTagName("Placemark");
-                        for (let i = 0; i < placemarks.length; i++) {
-                            const nameTag = placemarks[i].getElementsByTagName("name")[0];
-                            const coordTag = placemarks[i].getElementsByTagName("coordinates")[0];
-                            if (coordTag) {
-                                const parts = coordTag.textContent.trim().split(/[\s,]+/);
+
+                    // 2) Azimut_Pro_TamYedek.txt Çoklu Klasör Yedeği Kontrolü
+                    if (content.includes('KLASOR:') && (content.includes('Y:') || content.includes('E:'))) {
+                        const restoredCount = parseAzimutTxtBackupContent(content);
+                        if (restoredCount > 0) {
+                            syncData();
+                            updateDropdownUI();
+                            updateListUI();
+                            renderActiveProjectMarkers();
+                            updateStats();
+                            showToast(`Tam yedek dosyasından ${restoredCount} nokta başarıyla geri yüklendi!`, "fa-check-circle");
+                            return;
+                        }
+                    }
+
+                    // 3) Standart koordinat metni veya GeoJSON ise genel içe aktarma motoruyla yükle
+                    processImportedFileContent(content, file.name);
+                } catch (err) {
+                    console.error("Yedek geri yükleme hatası:", err);
+                    showToast("Yedek dosyası okunamadı veya format hatalı!", "fa-exclamation-triangle");
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        function parseAzimutTxtBackupContent(content) {
+            const lines = String(content || '').split(/\r?\n/);
+            let currentFolder = activeProject || "Varsayılan";
+            let count = 0;
+            lines.forEach((rawLine, idx) => {
+                const line = rawLine.trim();
+                if (!line || line.startsWith('AZIMUT PRO') || line.startsWith('===')) return;
+                if (line.startsWith('KLASOR:')) {
+                    const fName = line.replace('KLASOR:', '').trim();
+                    if (fName) {
+                        currentFolder = fName;
+                        if (!projectsData[currentFolder]) {
+                            projectsData[currentFolder] = { points: [], autoCounter: 1 };
+                        }
+                    }
+                    return;
+                }
+                const parts = line.split(/\t+/);
+                const ptName = (parts[0] || `P_${idx + 1}`).trim();
+                const eMatch = line.match(/E:([-+]?\d+(?:[.,]\d+)?)/i);
+                const bMatch = line.match(/B:([-+]?\d+(?:[.,]\d+)?)/i);
+                const yMatch = line.match(/Y:([-+]?\d+(?:[.,]\d+)?)/i);
+                const xMatch = line.match(/X:([-+]?\d+(?:[.,]\d+)?)/i);
+                const zMatch = line.match(/Z:([-+]?\d+(?:[.,]\d+)?)/i);
+                const kodMatch = line.match(/Kod:([^\t\r\n]+)/i);
+
+                let lat = eMatch ? parseFloat(eMatch[1].replace(',', '.')) : NaN;
+                let lon = bMatch ? parseFloat(bMatch[1].replace(',', '.')) : NaN;
+                const yVal = yMatch ? parseFloat(yMatch[1].replace(',', '.')) : NaN;
+                const xVal = xMatch ? parseFloat(xMatch[1].replace(',', '.')) : NaN;
+                const altVal = zMatch ? parseFloat(zMatch[1].replace(',', '.')) : 0;
+                const category = kodMatch ? kodMatch[1].trim() : 'Nokta';
+                const domVal = currentDOM || (appSettings.domMode !== 'AUTO' ? parseInt(appSettings.domMode, 10) : 33);
+
+                if ((isNaN(lat) || isNaN(lon)) && !isNaN(yVal) && !isNaN(xVal)) {
+                    const inv = calculateInverseWGS84(yVal, xVal, domVal);
+                    lat = inv.lat;
+                    lon = inv.lon;
+                }
+                if (!isNaN(lat) && !isNaN(lon)) {
+                    const proj = calculateProjected(lat, lon);
+                    if (!projectsData[currentFolder]) {
+                        projectsData[currentFolder] = { points: [], autoCounter: 1 };
+                    }
+                    projectsData[currentFolder].points.push({
+                        id: Date.now() + idx + Math.floor(Math.random() * 1000),
+                        name: ptName,
+                        category: category || 'Nokta',
+                        desc: 'Tam Yedekten Geri Yüklendi',
+                        lat: lat,
+                        lon: lon,
+                        alt: isNaN(altVal) ? 0 : altVal,
+                        y_saga: !isNaN(yVal) ? yVal : proj.y,
+                        x_yukari: !isNaN(xVal) ? xVal : proj.x,
+                        dom: proj.dom
+                    });
+                    projectsData[currentFolder].autoCounter = projectsData[currentFolder].points.length + 1;
+                    count++;
+                }
+            });
+            return count;
+        }
+
+        // --- TÜM FORMATLARDA DETAYLI DOSYA İÇE AKTARMA (IMPORT: NCN, DXF, KML, CSV, TXT, XYZ, GEOJSON, JSON) ---
+        function triggerImportFile() {
+            openDataTransferModal('IMPORT');
+        }
+
+        function triggerFormatImport(acceptFilter = '.ncn,.dxf,.kml,.csv,.txt,.xyz,.geojson,.json') {
+            if (!requireActiveMembership('Dosyadan Nokta İçe Aktarma')) return;
+            const input = document.getElementById('import-file-input');
+            if (!input) return;
+            input.setAttribute('accept', acceptFilter);
+            input.value = '';
+            input.click();
+        }
+
+        // İçe aktarılan (v1, v2) koordinat çiftini seçili sıraya ve DOM değerine göre (lat, lon, y, x, dom) olarak çözer
+        function resolveImportedPointCoords(v1, v2, coordOrder, domVal) {
+            if (isNaN(v1) || isNaN(v2)) return null;
+            let lat = NaN, lon = NaN, y = NaN, x = NaN;
+
+            if (coordOrder === 'LATLON') {
+                lat = v1; lon = v2;
+                const proj = calculateProjected(lat, lon);
+                y = proj.y; x = proj.x;
+            } else if (coordOrder === 'LONLAT') {
+                lon = v1; lat = v2;
+                const proj = calculateProjected(lat, lon);
+                y = proj.y; x = proj.x;
+            } else if (coordOrder === 'YX') {
+                y = v1; x = v2;
+                const inv = calculateInverseWGS84(y, x, domVal);
+                lat = inv.lat; lon = inv.lon;
+            } else if (coordOrder === 'XY') {
+                x = v1; y = v2;
+                const inv = calculateInverseWGS84(y, x, domVal);
+                lat = inv.lat; lon = inv.lon;
+            } else {
+                // AUTO: Otomatik Algıla
+                if (Math.abs(v1) <= 90 && Math.abs(v2) <= 180) {
+                    // Türkiye civarı kontrolü: eğer v1 ~ 26..45 ve v2 ~ 36..42 ise (Lon, Lat) olabilir, aksi halde (Lat, Lon)
+                    if (v1 >= 25 && v1 <= 35.5 && v2 >= 35.5 && v2 <= 43) {
+                        lon = v1; lat = v2;
+                    } else {
+                        lat = v1; lon = v2;
+                    }
+                    const proj = calculateProjected(lat, lon);
+                    y = proj.y; x = proj.x;
+                } else {
+                    // ITRF / ED50 / UTM Sağa (Y ~ 200,000 - 800,000) ve Yukarı (X ~ 3,800,000 - 4,800,000)
+                    if (v1 > 1000000 && v2 < 1000000) {
+                        x = v1; y = v2;
+                    } else {
+                        y = v1; x = v2;
+                    }
+                    const inv = calculateInverseWGS84(y, x, domVal);
+                    lat = inv.lat; lon = inv.lon;
+                }
+            }
+
+            if (isNaN(lat) || isNaN(lon) || Math.abs(lat) > 90 || Math.abs(lon) > 180) return null;
+            return { lat, lon, y, x, dom: domVal };
+        }
+
+        // AutoCAD DXF Dosyası Ayrıştırıcı (POINT, TEXT, MTEXT, LWPOLYLINE, POLYLINE/VERTEX, INSERT destekli)
+        function parseDxfFilePoints(content, coordOrder, domVal, defaultCat) {
+            const rawLines = String(content || '').replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
+            const pairs = [];
+            for (let i = 0; i + 1 < rawLines.length; i += 2) {
+                const code = parseInt(rawLines[i].trim(), 10);
+                const val = rawLines[i + 1].trim();
+                if (!isNaN(code)) pairs.push({ code, val });
+            }
+
+            const extracted = [];
+            const textLabels = [];
+            let i = 0;
+            while (i < pairs.length) {
+                if (pairs[i].code === 0) {
+                    const entityType = pairs[i].val.toUpperCase();
+                    i++;
+                    if (entityType === 'POINT' || entityType === 'TEXT' || entityType === 'MTEXT' || entityType === 'INSERT') {
+                        let c10 = NaN, c20 = NaN, c30 = 0, textVal = '', layerName = '';
+                        while (i < pairs.length && pairs[i].code !== 0) {
+                            const c = pairs[i].code;
+                            const v = pairs[i].val;
+                            if (c === 10 && isNaN(c10)) c10 = parseFloat(v.replace(',', '.'));
+                            else if (c === 20 && isNaN(c20)) c20 = parseFloat(v.replace(',', '.'));
+                            else if (c === 30) c30 = parseFloat(v.replace(',', '.')) || 0;
+                            else if (c === 1) textVal = v;
+                            else if (c === 8) layerName = v;
+                            i++;
+                        }
+                        if (!isNaN(c10) && !isNaN(c20)) {
+                            if (entityType === 'TEXT' || entityType === 'MTEXT') {
+                                textLabels.push({ c10, c20, c30, text: textVal, layer: layerName });
+                            } else {
+                                extracted.push({
+                                    c10, c20, c30,
+                                    name: textVal || '',
+                                    category: defaultCat || 'Nokta',
+                                    desc: `DXF ${entityType}${layerName ? ' (' + layerName + ')' : ''}`
+                                });
+                            }
+                        }
+                    } else if (entityType === 'LWPOLYLINE') {
+                        let layerName = '';
+                        let polyIdx = 1;
+                        let pending10 = NaN;
+                        while (i < pairs.length && pairs[i].code !== 0) {
+                            const c = pairs[i].code;
+                            const v = pairs[i].val;
+                            if (c === 8) layerName = v;
+                            else if (c === 10) {
+                                pending10 = parseFloat(v.replace(',', '.'));
+                            } else if (c === 20 && !isNaN(pending10)) {
+                                const c20 = parseFloat(v.replace(',', '.'));
+                                if (!isNaN(c20)) {
+                                    extracted.push({
+                                        c10: pending10,
+                                        c20: c20,
+                                        c30: 0,
+                                        name: `K_${polyIdx++}`,
+                                        category: defaultCat === 'Nokta' ? 'Sinir' : defaultCat,
+                                        desc: `DXF Poligon Köşesi${layerName ? ' (' + layerName + ')' : ''}`
+                                    });
+                                }
+                                pending10 = NaN;
+                            }
+                            i++;
+                        }
+                    } else if (entityType === 'VERTEX') {
+                        let c10 = NaN, c20 = NaN, c30 = 0, layerName = '';
+                        while (i < pairs.length && pairs[i].code !== 0) {
+                            const c = pairs[i].code;
+                            const v = pairs[i].val;
+                            if (c === 10) c10 = parseFloat(v.replace(',', '.'));
+                            else if (c === 20) c20 = parseFloat(v.replace(',', '.'));
+                            else if (c === 30) c30 = parseFloat(v.replace(',', '.')) || 0;
+                            else if (c === 8) layerName = v;
+                            i++;
+                        }
+                        if (!isNaN(c10) && !isNaN(c20)) {
+                            extracted.push({
+                                c10, c20, c30,
+                                name: '',
+                                category: defaultCat,
+                                desc: `DXF Vertex${layerName ? ' (' + layerName + ')' : ''}`
+                            });
+                        }
+                    } else {
+                        while (i < pairs.length && pairs[i].code !== 0) i++;
+                    }
+                } else {
+                    i++;
+                }
+            }
+
+            // Eğer DXF dosyasında hiç POINT/LWPOLYLINE yoksa ama TEXT nesneleri varsa TEXT koordinatlarını nokta olarak al
+            if (extracted.length === 0 && textLabels.length > 0) {
+                textLabels.forEach((t, idx) => {
+                    extracted.push({
+                        c10: t.c10,
+                        c20: t.c20,
+                        c30: t.c30,
+                        name: t.text || `DXF_${idx + 1}`,
+                        category: defaultCat,
+                        desc: `DXF Yazı Noktası`
+                    });
+                });
+            } else if (extracted.length > 0 && textLabels.length > 0) {
+                // POINT nesnelerine yakın (3 metre içinde) TEXT etiketi varsa nokta adı olarak eşleştir
+                extracted.forEach(pt => {
+                    if (pt.name) return;
+                    let bestDist = 3.5;
+                    let bestTxt = '';
+                    textLabels.forEach(t => {
+                        if (!t.text) return;
+                        const d = Math.hypot(pt.c10 - t.c10, pt.c20 - t.c20);
+                        if (d < bestDist) {
+                            bestDist = d;
+                            bestTxt = t.text;
+                        }
+                    });
+                    if (bestTxt) pt.name = bestTxt;
+                });
+            }
+
+            const outPoints = [];
+            extracted.forEach((item, idx) => {
+                const resolved = resolveImportedPointCoords(item.c10, item.c20, coordOrder, domVal);
+                if (resolved) {
+                    outPoints.push({
+                        id: Date.now() + idx + Math.floor(Math.random() * 1000),
+                        name: item.name || `DXF_${idx + 1}`,
+                        category: item.category || defaultCat || 'Nokta',
+                        desc: item.desc || 'AutoCAD DXF İçe Aktarım',
+                        lat: resolved.lat,
+                        lon: resolved.lon,
+                        alt: item.c30 || 0,
+                        y_saga: resolved.y,
+                        x_yukari: resolved.x,
+                        dom: resolved.dom
+                    });
+                }
+            });
+            return outPoints;
+        }
+
+        function handleFileImport(event) {
+            const file = event.target.files && event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                processImportedFileContent(e.target.result, file.name);
+            };
+            reader.readAsText(file);
+        }
+
+        function processImportedFileContent(content, fileName = 'ithal.txt') {
+            const ext = String(fileName || '').split('.').pop().toLowerCase();
+            const domOverrideVal = document.getElementById('import-dom-override-select')?.value || 'AUTO';
+            const defaultDom = domOverrideVal !== 'AUTO'
+                ? parseInt(domOverrideVal, 10)
+                : (currentDOM || (appSettings.domMode !== 'AUTO' ? parseInt(appSettings.domMode, 10) : 33));
+            const coordOrder = document.getElementById('import-coord-order-select')?.value || 'AUTO';
+            const defaultCat = document.getElementById('import-default-category-select')?.value || 'Nokta';
+            const folderMode = document.getElementById('import-target-folder-mode')?.value || 'ACTIVE';
+
+            let targetFolder = activeProject || 'Varsayılan';
+            if (folderMode === 'NEW_FROM_FILE') {
+                const baseName = String(fileName || 'Yeni_Proje').replace(/\.[^/.]+$/, '').trim() || 'İçe_Aktarılan';
+                targetFolder = baseName;
+                if (!projectsData[targetFolder]) {
+                    projectsData[targetFolder] = { points: [], autoCounter: 1 };
+                }
+                activeProject = targetFolder;
+            }
+            if (!projectsData[targetFolder]) {
+                projectsData[targetFolder] = { points: [], autoCounter: 1 };
+            }
+
+            let importedCount = 0;
+
+            try {
+                if (ext === 'dxf') {
+                    const dxfPts = parseDxfFilePoints(content, coordOrder, defaultDom, defaultCat);
+                    dxfPts.forEach(pt => {
+                        projectsData[targetFolder].points.push(pt);
+                        importedCount++;
+                    });
+                }
+                else if (ext === 'geojson' || ext === 'json') {
+                    const parsed = JSON.parse(content);
+                    if (parsed.features && Array.isArray(parsed.features)) {
+                        parsed.features.forEach((f, idx) => {
+                            if (!f || !f.geometry) return;
+                            const gType = f.geometry.type;
+                            const props = f.properties || {};
+                            const baseName = props.name || props.Nokta_Adi || props.ad || `GEO_${idx + 1}`;
+                            const cat = props.category || props.Kategori || defaultCat || 'Nokta';
+
+                            if (gType === 'Point' && Array.isArray(f.geometry.coordinates)) {
+                                const [lon, lat, alt] = f.geometry.coordinates;
+                                if (!isNaN(lat) && !isNaN(lon)) {
+                                    const proj = calculateProjected(lat, lon);
+                                    projectsData[targetFolder].points.push({
+                                        id: Date.now() + idx,
+                                        name: String(baseName),
+                                        category: String(cat),
+                                        desc: props.desc || 'GeoJSON İçe Aktarım',
+                                        lat: Number(lat),
+                                        lon: Number(lon),
+                                        alt: Number(alt || props.alt || 0),
+                                        y_saga: proj.y,
+                                        x_yukari: proj.x,
+                                        dom: proj.dom
+                                    });
+                                    importedCount++;
+                                }
+                            } else if (gType === 'Polygon' || gType === 'MultiPolygon' || gType === 'LineString' || gType === 'MultiLineString') {
+                                const flatCoords = [];
+                                const walkCoords = (arr) => {
+                                    if (!Array.isArray(arr)) return;
+                                    if (typeof arr[0] === 'number' && typeof arr[1] === 'number') {
+                                        flatCoords.push(arr);
+                                    } else {
+                                        arr.forEach(walkCoords);
+                                    }
+                                };
+                                walkCoords(f.geometry.coordinates);
+                                flatCoords.forEach((c, cIdx) => {
+                                    // Son kapanış köşesi ilk köşeyle aynıysa atla
+                                    if (cIdx === flatCoords.length - 1 && flatCoords.length > 2 && c[0] === flatCoords[0][0] && c[1] === flatCoords[0][1]) return;
+                                    const [lon, lat, alt] = c;
+                                    if (!isNaN(lat) && !isNaN(lon)) {
+                                        const proj = calculateProjected(lat, lon);
+                                        projectsData[targetFolder].points.push({
+                                            id: Date.now() + idx * 100 + cIdx,
+                                            name: `${baseName}_K${cIdx + 1}`,
+                                            category: cat === 'Nokta' ? 'Sinir' : cat,
+                                            desc: 'GeoJSON Köşe Noktası',
+                                            lat: Number(lat),
+                                            lon: Number(lon),
+                                            alt: Number(alt || 0),
+                                            y_saga: proj.y,
+                                            x_yukari: proj.x,
+                                            dom: proj.dom
+                                        });
+                                        importedCount++;
+                                    }
+                                });
+                            }
+                        });
+                    } else if (parsed && typeof parsed === 'object') {
+                        for (let k in parsed) {
+                            if (parsed[k] && Array.isArray(parsed[k].points)) {
+                                projectsData[k] = parsed[k];
+                                importedCount += parsed[k].points.length;
+                                activeProject = k;
+                            }
+                        }
+                    }
+                }
+                else if (ext === 'kml') {
+                    const parser = new DOMParser();
+                    const xml = parser.parseFromString(content, "text/xml");
+                    const placemarks = xml.getElementsByTagName("Placemark");
+                    for (let i = 0; i < placemarks.length; i++) {
+                        const nameTag = placemarks[i].getElementsByTagName("name")[0];
+                        const pmName = nameTag ? nameTag.textContent.trim() : `KML_${i + 1}`;
+                        const coordTags = placemarks[i].getElementsByTagName("coordinates");
+                        for (let c = 0; c < coordTags.length; c++) {
+                            const rawCoords = coordTags[c].textContent.trim();
+                            const tuples = rawCoords.split(/\s+/).filter(Boolean);
+                            tuples.forEach((tupleStr, tIdx) => {
+                                // Poligon kapanış noktasını tekrar ekleme
+                                if (tuples.length > 2 && tIdx === tuples.length - 1 && tupleStr === tuples[0]) return;
+                                const parts = tupleStr.split(',');
                                 const lon = parseFloat(parts[0]);
                                 const lat = parseFloat(parts[1]);
                                 const alt = parseFloat(parts[2]) || 0;
                                 if (!isNaN(lat) && !isNaN(lon)) {
                                     const proj = calculateProjected(lat, lon);
-                                    projectsData[activeProject].points.push({
-                                        id: Date.now() + i,
-                                        name: nameTag ? nameTag.textContent.trim() : `KML_${i+1}`,
-                                        category: 'Nokta',
-                                        desc: 'KML İçe Aktarım',
+                                    const ptLabel = tuples.length > 1 ? `${pmName}_K${tIdx + 1}` : pmName;
+                                    projectsData[targetFolder].points.push({
+                                        id: Date.now() + i * 100 + tIdx,
+                                        name: ptLabel,
+                                        category: tuples.length > 1 && defaultCat === 'Nokta' ? 'Sinir' : defaultCat,
+                                        desc: 'Google Earth KML İçe Aktarım',
                                         lat, lon, alt,
                                         y_saga: proj.y, x_yukari: proj.x, dom: proj.dom
                                     });
                                     importedCount++;
                                 }
-                            }
+                            });
                         }
                     }
-                    else {
-                        const lines = content.split(/\r?\n/);
+                }
+                else {
+                    // NCN, CSV, TXT, XYZ veya Azimut_Pro_TamYedek.txt
+                    if (content.includes('KLASOR:') && (content.includes('Y:') || content.includes('E:'))) {
+                        importedCount += parseAzimutTxtBackupContent(content);
+                    } else {
+                        const lines = String(content || '').split(/\r?\n/);
                         lines.forEach((line, idx) => {
-                            let clean = line.trim();
-                            if (!clean || clean.startsWith('#') || clean.toLowerCase().includes('nokta_adi')) return;
-                            const tokens = clean.split(/[;\t,\s]+/).filter(Boolean);
-                            if (tokens.length >= 3) {
-                                const name = tokens[0];
-                                const v1 = parseFloat(tokens[1].replace(',', '.'));
-                                const v2 = parseFloat(tokens[2].replace(',', '.'));
-                                const v3 = tokens[3] ? parseFloat(tokens[3].replace(',', '.')) : 0;
+                            let clean = line.trim().replace(/^\uFEFF/, '');
+                            if (!clean || clean.startsWith('#') || clean.startsWith('//') || clean.toLowerCase().includes('nokta_adi')) return;
 
-                                if (!isNaN(v1) && !isNaN(v2)) {
-                                    let lat, lon, y, x;
-                                    if (Math.abs(v1) <= 90 && Math.abs(v2) <= 180) {
-                                        lat = v1; lon = v2;
-                                        const proj = calculateProjected(lat, lon);
-                                        y = proj.y; x = proj.x;
-                                    } else {
-                                        if (v1 > 1000000 && v2 < 1000000) {
-                                            x = v1; y = v2;
-                                        } else {
-                                            y = v1; x = v2;
-                                        }
-                                        const inv = calculateInverseWGS84(y, x, defaultDom);
-                                        lat = inv.lat; lon = inv.lon;
-                                    }
-                                    projectsData[activeProject].points.push({
+                            // AZİMUT Pro'nun kendi dışa aktardığı 9 sütunlu CSV formatı mı kontrol et:
+                            // Nokta_Adi;Kategori;Y_Saga;X_Yukari;Z_Kot;DOM;Enlem_WGS84;Boylam_WGS84;Aciklama
+                            const semiParts = clean.split(';');
+                            if (semiParts.length >= 8) {
+                                const csvLat = parseFloat(semiParts[6].replace(',', '.'));
+                                const csvLon = parseFloat(semiParts[7].replace(',', '.'));
+                                const csvAlt = parseFloat(semiParts[4].replace(',', '.')) || 0;
+                                if (!isNaN(csvLat) && !isNaN(csvLon) && Math.abs(csvLat) <= 90 && Math.abs(csvLon) <= 180) {
+                                    const proj = calculateProjected(csvLat, csvLon);
+                                    projectsData[targetFolder].points.push({
                                         id: Date.now() + idx,
-                                        name: name,
-                                        category: 'Nokta',
+                                        name: semiParts[0].trim() || `CSV_${idx + 1}`,
+                                        category: semiParts[1].trim() || defaultCat,
+                                        desc: (semiParts[8] || 'CSV İçe Aktarım').trim(),
+                                        lat: csvLat,
+                                        lon: csvLon,
+                                        alt: csvAlt,
+                                        y_saga: proj.y,
+                                        x_yukari: proj.x,
+                                        dom: proj.dom
+                                    });
+                                    importedCount++;
+                                    return;
+                                }
+                            }
+
+                            const tokens = clean.split(/[;\t,\s]+/).filter(Boolean);
+                            if (tokens.length >= 2) {
+                                let ptName = '';
+                                let v1 = NaN, v2 = NaN, v3 = 0, codeStr = defaultCat;
+
+                                const firstAsNum = parseFloat(tokens[0].replace(',', '.'));
+                                const secondAsNum = parseFloat(tokens[1].replace(',', '.'));
+
+                                // Eğer sadece 2 sayı varsa (Y X veya Lat Lon)
+                                if (tokens.length === 2 && !isNaN(firstAsNum) && !isNaN(secondAsNum)) {
+                                    ptName = `P_${idx + 1}`;
+                                    v1 = firstAsNum;
+                                    v2 = secondAsNum;
+                                } else {
+                                    ptName = tokens[0].replace(/^["']|["']$/g, '');
+                                    v1 = parseFloat((tokens[1] || '').replace(',', '.'));
+                                    v2 = parseFloat((tokens[2] || '').replace(',', '.'));
+                                    v3 = tokens[3] ? parseFloat(tokens[3].replace(',', '.')) : 0;
+                                    if (tokens[4]) codeStr = tokens[4].replace(/^["']|["']$/g, '');
+                                }
+
+                                const resolved = resolveImportedPointCoords(v1, v2, coordOrder, defaultDom);
+                                if (resolved) {
+                                    projectsData[targetFolder].points.push({
+                                        id: Date.now() + idx + Math.floor(Math.random() * 1000),
+                                        name: ptName || `N_${idx + 1}`,
+                                        category: codeStr || defaultCat || 'Nokta',
                                         desc: `${ext.toUpperCase()} İçe Aktarım`,
-                                        lat, lon, alt: isNaN(v3) ? 0 : v3,
-                                        y_saga: y, x_yukari: x, dom: defaultDom
+                                        lat: resolved.lat,
+                                        lon: resolved.lon,
+                                        alt: isNaN(v3) ? 0 : v3,
+                                        y_saga: resolved.y,
+                                        x_yukari: resolved.x,
+                                        dom: resolved.dom
                                     });
                                     importedCount++;
                                 }
                             }
                         });
                     }
-
-                    if (importedCount > 0) {
-                        syncData();
-                        updateDropdownUI();
-                        updateListUI();
-                        renderActiveProjectMarkers();
-                        const pts = projectsData[activeProject].points;
-                        const lastPt = pts[pts.length - 1];
-                        if (lastPt) {
-                            map.invalidateSize({ pan: false });
-                            map.setView([lastPt.lat, lastPt.lon], 17);
-                        }
-                        showToast(`${importedCount} nokta başarıyla içe aktarıldı!`, "fa-file-import");
-                    } else {
-                        showToast("Dosyada geçerli koordinat bulunamadı", "fa-exclamation-triangle");
-                    }
-                } catch (err) {
-                    console.error(err);
-                    showToast("Dosya okunurken hata oluştu", "fa-exclamation-triangle");
                 }
-            };
-            reader.readAsText(file);
+
+                if (importedCount > 0) {
+                    if (projectsData[targetFolder]) {
+                        projectsData[targetFolder].autoCounter = (projectsData[targetFolder].points?.length || 0) + 1;
+                    }
+                    syncData();
+                    updateDropdownUI();
+                    updateListUI();
+                    renderActiveProjectMarkers();
+                    updateStats();
+                    refreshDataTransferModalUI();
+
+                    // Nokta listesine geri dön ve haritayı son noktaya odakla
+                    returnToRecordsModal();
+                    const pts = projectsData[activeProject]?.points || [];
+                    const lastPt = pts[pts.length - 1];
+                    if (lastPt) {
+                        map.invalidateSize({ pan: false });
+                        map.setView([lastPt.lat, lastPt.lon], 17);
+                    }
+                    showToast(`${importedCount} nokta "${activeProject}" klasörüne başarıyla içe aktarıldı!`, "fa-file-import");
+                } else {
+                    showToast("Dosyada geçerli koordinat bulunamadı. Sütun sırasını kontrol edin.", "fa-exclamation-triangle");
+                }
+            } catch (err) {
+                console.error("İçe aktarma hatası:", err);
+                showToast("Dosya okunurken hata oluştu: " + (err.message || ""), "fa-exclamation-triangle");
+            }
         }
 
         // --- v6: GÖRSEL İNTERAKTİF KULLANIM REHBERİ (TUTORIAL SİSTEMİ) ---
