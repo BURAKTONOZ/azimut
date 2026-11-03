@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://buraktonoz.com/azimut/</loc>
-    <lastmod>2026-11-03T12:09:05.534Z</lastmod>
+    <lastmod>2026-11-03T17:12:16.702Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,12 +13,22 @@
   </url>
   <url>
     <loc>https://buraktonoz.com/azimut/tanitim.html</loc>
-    <lastmod>2026-11-03T12:09:05.534Z</lastmod>
+    <lastmod>2026-11-03T17:12:16.702Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://buraktonoz.com/azimut/ek2.png</image:loc>
       <image:title>TKGM Tüm Parselleri Görme ve MAKS Sınır Çizimi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buraktonoz.com/azimut/tanitim.html?makale=tkgm-parsel-sorgulama-verilerini-netcad-ncn-ve-autocad-dxfe-aktarma-itrf96--3xan</loc>
+    <lastmod>2026-11-03T17:12:14.943Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:title>TKGM Parsel Sorgulama Verilerini NetCAD (.NCN) ve AutoCAD (.DXF)&apos;e Aktarma: ITRF96, Aplikasyon ve MAKS Entegrasyon Rehberi</image:title>
     </image:image>
   </url>
   <url>
