@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://buraktonoz.com/azimut/</loc>
-    <lastmod>2026-11-03T01:42:34.148Z</lastmod>
+    <lastmod>2026-11-03T12:09:05.534Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://buraktonoz.com/azimut/tanitim.html</loc>
-    <lastmod>2026-11-03T01:42:34.148Z</lastmod>
+    <lastmod>2026-11-03T12:09:05.534Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -22,12 +22,22 @@
     </image:image>
   </url>
   <url>
+    <loc>https://buraktonoz.com/azimut/tanitim.html?makale=katodik-koruma-tesislerinde-anot-yatagi-ve-olcu-kutusu-aplikasyonu-hassas-b-a1jt</loc>
+    <lastmod>2026-11-03T12:09:04.614Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:title>Katodik Koruma Tesislerinde Anot Yatağı ve Ölçü Kutusu Aplikasyonu: Hassas Boru Hattı Konumlandırma ve Jeodezik Çözümler (TKGM, ITRF96, AZİMUT Pro)</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://buraktonoz.com/azimut/tanitim.html?makale=baraj-ve-golet-projelerinde-kret-ekseni-ve-maksimum-su-kotu-aplikasyonu-jeo-wbka</loc>
     <lastmod>2026-11-03T01:42:32.879Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:loc>https://img.magnific.com/free-vector/geodesy-isometric-composition-with-view-square-pit-characters-two-engineers-performing-some-measurements-vector-illustration_1284-67601.jpg?semt=ais_hybrid&amp;w=740&amp;q=80</image:loc>
       <image:title>Baraj ve Gölet Projelerinde Kret Ekseni ve Maksimum Su Kotu Aplikasyonu: Jeodezik Yöntemler ve AZİMUT Pro ile Hassas İşaretleme</image:title>
     </image:image>
   </url>
@@ -37,7 +47,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:loc>https://t3.ftcdn.net/jpg/06/21/93/48/360_F_621934812_IUI76rNo3UUYcYXncPeUHiDfk013oP59.jpg</image:loc>
       <image:title>Aplikasyon Noktalarının Sağlamlaştırılması: TKGM Parsel ve ITRF96 Uyumlu Röperleme, İşaretleme Standartları ve AZİMUT Pro ile Saha Çözümleri</image:title>
     </image:image>
   </url>
