@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://buraktonoz.com/azimut/</loc>
-    <lastmod>2026-11-02T22:51:54.539Z</lastmod>
+    <lastmod>2026-11-03T01:42:34.148Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,12 +13,22 @@
   </url>
   <url>
     <loc>https://buraktonoz.com/azimut/tanitim.html</loc>
-    <lastmod>2026-11-02T22:51:54.539Z</lastmod>
+    <lastmod>2026-11-03T01:42:34.148Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://buraktonoz.com/azimut/ek2.png</image:loc>
       <image:title>TKGM Tüm Parselleri Görme ve MAKS Sınır Çizimi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buraktonoz.com/azimut/tanitim.html?makale=baraj-ve-golet-projelerinde-kret-ekseni-ve-maksimum-su-kotu-aplikasyonu-jeo-wbka</loc>
+    <lastmod>2026-11-03T01:42:32.879Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:title>Baraj ve Gölet Projelerinde Kret Ekseni ve Maksimum Su Kotu Aplikasyonu: Jeodezik Yöntemler ve AZİMUT Pro ile Hassas İşaretleme</image:title>
     </image:image>
   </url>
   <url>
