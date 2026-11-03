@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://buraktonoz.com/azimut/</loc>
-    <lastmod>2026-11-03T17:12:16.702Z</lastmod>
+    <lastmod>2026-11-03T20:35:14.083Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,12 +13,22 @@
   </url>
   <url>
     <loc>https://buraktonoz.com/azimut/tanitim.html</loc>
-    <lastmod>2026-11-03T17:12:16.702Z</lastmod>
+    <lastmod>2026-11-03T20:35:14.083Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://buraktonoz.com/azimut/ek2.png</image:loc>
       <image:title>TKGM Tüm Parselleri Görme ve MAKS Sınır Çizimi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buraktonoz.com/azimut/tanitim.html?makale=arazide-ekrana-bakmadan-hassas-aplikasyon-sesli-ve-titresimli-yakinlik-rada-cy25</loc>
+    <lastmod>2026-11-03T20:35:13.143Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:title>Arazide Ekrana Bakmadan Hassas Aplikasyon: Sesli ve Titreşimli Yakınlık Radarı ile Hedef Nokta Sıfırlama (TKGM Parsel, ITRF96, MAKS Uyumlu AZİMUT Pro)</image:title>
     </image:image>
   </url>
   <url>
