@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://buraktonoz.com/azimut/</loc>
-    <lastmod>2026-11-03T20:35:14.083Z</lastmod>
+    <lastmod>2026-11-04T00:03:15.712Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,12 +13,22 @@
   </url>
   <url>
     <loc>https://buraktonoz.com/azimut/tanitim.html</loc>
-    <lastmod>2026-11-03T20:35:14.083Z</lastmod>
+    <lastmod>2026-11-04T00:03:15.712Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://buraktonoz.com/azimut/ek2.png</image:loc>
       <image:title>TKGM Tüm Parselleri Görme ve MAKS Sınır Çizimi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buraktonoz.com/azimut/tanitim.html?makale=zeytinliklerde-agac-basi-koordinat-envanteri-cbs-tabanli-kayit-tkgm-parsel--sh5r</loc>
+    <lastmod>2026-11-04T00:03:15.061Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:title>Zeytinliklerde Ağaç Başı Koordinat Envanteri: CBS Tabanlı Kayıt, TKGM Parsel Sorgulama ve ITRF96 Aplikasyon Çözümleri</image:title>
     </image:image>
   </url>
   <url>
