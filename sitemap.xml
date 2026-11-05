@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://buraktonoz.com/azimut/</loc>
-    <lastmod>2026-11-05T00:27:53.894Z</lastmod>
+    <lastmod>2026-11-05T12:36:09.927Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,12 +13,22 @@
   </url>
   <url>
     <loc>https://buraktonoz.com/azimut/tanitim.html</loc>
-    <lastmod>2026-11-05T00:27:53.894Z</lastmod>
+    <lastmod>2026-11-05T12:36:09.927Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://buraktonoz.com/azimut/ek2.png</image:loc>
       <image:title>TKGM Tüm Parselleri Görme ve MAKS Sınır Çizimi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buraktonoz.com/azimut/tanitim.html?makale=insaat-hakedislerinde-devrim-koordinat-ozet-tablosu-ve-harita-krokisiyle-im-4jo2</loc>
+    <lastmod>2026-11-05T12:36:08.221Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:title>İnşaat Hakedişlerinde Devrim: Koordinat Özet Tablosu ve Harita Krokisiyle İmalat Belgeleme, TKGM Parsel ve MAKS Entegrasyonu</image:title>
     </image:image>
   </url>
   <url>
