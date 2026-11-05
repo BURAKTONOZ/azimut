@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://buraktonoz.com/azimut/</loc>
-    <lastmod>2026-11-04T20:53:48.503Z</lastmod>
+    <lastmod>2026-11-05T00:27:53.894Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,12 +13,22 @@
   </url>
   <url>
     <loc>https://buraktonoz.com/azimut/tanitim.html</loc>
-    <lastmod>2026-11-04T20:53:48.503Z</lastmod>
+    <lastmod>2026-11-05T00:27:53.894Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://buraktonoz.com/azimut/ek2.png</image:loc>
       <image:title>TKGM Tüm Parselleri Görme ve MAKS Sınır Çizimi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buraktonoz.com/azimut/tanitim.html?makale=tkgm-parsel-sorgulama-ve-sinir-tespiti-koordinat-bilgisi-olmayanlar-icin-uy-3zz4</loc>
+    <lastmod>2026-11-05T00:27:52.934Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:title>TKGM Parsel Sorgulama ve Sınır Tespiti: Koordinat Bilgisi Olmayanlar İçin Uydu Haritası Köşe Yakalama ile Aplikasyon Doğruluğu</image:title>
     </image:image>
   </url>
   <url>
