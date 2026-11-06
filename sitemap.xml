@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://buraktonoz.com/azimut/</loc>
-    <lastmod>2026-11-05T21:11:01.279Z</lastmod>
+    <lastmod>2026-11-06T00:28:13.697Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,12 +13,22 @@
   </url>
   <url>
     <loc>https://buraktonoz.com/azimut/tanitim.html</loc>
-    <lastmod>2026-11-05T21:11:01.279Z</lastmod>
+    <lastmod>2026-11-06T00:28:13.697Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://buraktonoz.com/azimut/ek2.png</image:loc>
       <image:title>TKGM Tüm Parselleri Görme ve MAKS Sınır Çizimi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buraktonoz.com/azimut/tanitim.html?makale=tel-cit-bahce-duvari-ve-jiletli-tel-cekimi-oncesi-sinir-isaretlemesi-tkgm-p-k9tu</loc>
+    <lastmod>2026-11-06T00:28:12.364Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:title>Tel Çit, Bahçe Duvarı ve Jiletli Tel Çekimi Öncesi Sınır İşaretlemesi: TKGM Parsel, ITRF96 Aplikasyon ve MAKS ile Hatasız Çözümler | AZİMUT Pro Detayları</image:title>
     </image:image>
   </url>
   <url>
