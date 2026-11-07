@@ -58,3 +58,9 @@ jobs:
           git add sitemap.xml robots.txt
           git commit -m "SEO: Dinamik Sitemap.xml ve Robots.txt güncellendi [skip ci]" || echo "Sitemap zaten güncel"
           git push origin HEAD:main || git push
+
+      - name: Arama Motorlarına Sitemap Bildirimi Gönder
+        continue-on-error: true
+        run: |
+          curl -sS "https://www.bing.com/ping?sitemap=https://buraktonoz.com/azimut/sitemap.xml" > /dev/null || true
+          echo "✅ Sitemap ve arama motoru işlemleri tamamlandı."
