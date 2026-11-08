@@ -3,7 +3,7 @@
         xmlns:image="[http://www.google.com/schemas/sitemap-image/1.1](http://www.google.com/schemas/sitemap-image/1.1)">
   <url>
     <loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)</loc>
-    <lastmod>2026-11-08T18:59:41.417Z</lastmod>
+    <lastmod>2026-11-08T22:59:28.895Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>[https://buraktonoz.com/azimut/tanitim.html](https://buraktonoz.com/azimut/tanitim.html)</loc>
-    <lastmod>2026-11-08T18:59:41.417Z</lastmod>
+    <lastmod>2026-11-08T22:59:28.895Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -22,12 +22,22 @@
     </image:image>
   </url>
   <url>
+    <loc>[https://buraktonoz.com/azimut/tanitim.html?makale=](https://buraktonoz.com/azimut/tanitim.html?makale=)itrf96-ve-utm-projeksiyonunda-dom-hatasiz-saha-olcumu-jeoloji-ve-jeofizik-m-pono</loc>
+    <lastmod>2026-11-08T22:59:26.877Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:title>ITRF96 ve UTM Projeksiyonunda DOM Hatasız Saha Ölçümü: Jeoloji ve Jeofizik Mühendisleri İçin AZİMUT Pro ile Doğru Aplikasyon ve TKGM Parsel Yönetimi</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>[https://buraktonoz.com/azimut/tanitim.html?makale=](https://buraktonoz.com/azimut/tanitim.html?makale=)orman-isletme-sefliklerinde-bolme-ve-bolmecik-sinir-takibi-azimut-pro-ile-m-5bbc</loc>
     <lastmod>2026-11-08T18:59:39.541Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://static.daktilo.com/sites/1323/uploads/2025/02/21/large/660x310-1742030915.webp</image:loc>
       <image:title>Orman İşletme Şefliklerinde Bölme ve Bölmecik Sınır Takibi: AZİMUT Pro ile Mobil Aplikasyon, TKGM ve MAKS Entegrasyonu</image:title>
     </image:image>
   </url>
@@ -37,7 +47,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://yatirimlar.com/resimler/cengiz-ud-19058-u-d1.jpg</image:loc>
       <image:title>Enerji Depolama Tesisleri (EDT) Konteyner Aplikasyonu: TKGM Parsel, ITRF96 ve MAKS Entegrasyonuyla Hassas Saha Uygulamaları | AZİMUT Pro ile Kesintisiz Kontrol</image:title>
     </image:image>
   </url>
@@ -47,7 +57,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://www.rehberlikburada.com/dosyalar/sehir-ve-bolge-planlamaa01fc.jpg</image:loc>
       <image:title>Şehir Plancıları İçin GPS&apos;te Maksimum Doğruluk: ITRF96, Epok Ortalaması (RMS) ve AZİMUT Pro Aplikasyon Çözümleri</image:title>
     </image:image>
   </url>
@@ -57,7 +67,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://ataymuhendislik.com/wp-content/uploads/2022/12/hassas-nokta-konumlandirma-2.jpg</image:loc>
       <image:title>Güzergah Üzerindeki Yapıların Hassas Koordinatlandırılması: Yan Nokta Hesabı (Dik Ayak ve Dik Boy) ve AZİMUT Pro ile Saha Aplikasyonu Rehberi</image:title>
     </image:image>
   </url>
@@ -67,7 +77,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-d1SOmFgfhdYlo14zOWUYzSIdmNGG6nQPK2vlmbVtzsTqrVFkT6NV6CFA&amp;s=10</image:loc>
       <image:title>NetCAD .NCN Nokta Dosyaları Cep Telefonunda: ITRF96 Aplikasyon ve TKGM Parsel Sorgulama ile AZİMUT Pro Farkı</image:title>
     </image:image>
   </url>
@@ -77,7 +87,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAl0joD6L7eSOtWZ3M7mPRKvS60lI9lSr6Tb16K8zogtpUxtPOnHkLA9WV&amp;s=10</image:loc>
       <image:title>Boru Hattı Yatay Sondaj (HDD) Geçişlerinde Giriş ve Çıkış Noktası Tespiti: ITRF96 Dönüşümü, Aplikasyon ve AZİMUT Pro ile Hassas Jeodezik Çözümler</image:title>
     </image:image>
   </url>
@@ -157,7 +167,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdUlpA4BDdozWTjZf-vdaRItkTiwLgjW4GLTSq1IGtQqYREFry12fJ1LE&amp;s=10</image:loc>
       <image:title>Maden ve Ocak Yönetiminde Devrim: TKGM Parsel, ITRF96 ve MAKS Entegrasyonuyla Anlık Saha Alan (m² / dekar) ve Mesafe Metrajı Hesaplama Rehberi</image:title>
     </image:image>
   </url>
@@ -177,7 +187,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0-4Tc4FDo-uBWw4gzBG8qPRqN7-9Ivr9jDfE-DuGp7OBuLsGLFO9eexc&amp;s=10</image:loc>
       <image:title>Arazide Ekrana Bakmadan Hassas Aplikasyon: Sesli ve Titreşimli Yakınlık Radarı ile Hedef Nokta Sıfırlama (TKGM Parsel, ITRF96, MAKS Uyumlu AZİMUT Pro)</image:title>
     </image:image>
   </url>
