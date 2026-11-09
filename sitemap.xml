@@ -3,7 +3,7 @@
         xmlns:image="[http://www.google.com/schemas/sitemap-image/1.1](http://www.google.com/schemas/sitemap-image/1.1)">
   <url>
     <loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)</loc>
-    <lastmod>2026-11-08T22:59:28.895Z</lastmod>
+    <lastmod>2026-11-09T13:09:07.917Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>[https://buraktonoz.com/azimut/tanitim.html](https://buraktonoz.com/azimut/tanitim.html)</loc>
-    <lastmod>2026-11-08T22:59:28.895Z</lastmod>
+    <lastmod>2026-11-09T13:09:07.917Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -22,12 +22,22 @@
     </image:image>
   </url>
   <url>
+    <loc>[https://buraktonoz.com/azimut/tanitim.html?makale=](https://buraktonoz.com/azimut/tanitim.html?makale=)gayrimenkul-degerleme-uzmanlari-icin-mobil-saha-cozumleri-netcad-autocad-km-2d1v</loc>
+    <lastmod>2026-11-09T13:09:06.848Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:title>Gayrimenkul Değerleme Uzmanları İçin Mobil Saha Çözümleri: NetCAD, AutoCAD, KML ve Excel Dosyalarını Telefondan Açma, TKGM Parsel Sorgulama ve Hassas Aplikasyon Kolaylığı</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>[https://buraktonoz.com/azimut/tanitim.html?makale=](https://buraktonoz.com/azimut/tanitim.html?makale=)itrf96-ve-utm-projeksiyonunda-dom-hatasiz-saha-olcumu-jeoloji-ve-jeofizik-m-pono</loc>
     <lastmod>2026-11-08T22:59:26.877Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://ataymuhendislik.com/wp-content/uploads/2024/09/koordinat-nedir-2.jpg</image:loc>
       <image:title>ITRF96 ve UTM Projeksiyonunda DOM Hatasız Saha Ölçümü: Jeoloji ve Jeofizik Mühendisleri İçin AZİMUT Pro ile Doğru Aplikasyon ve TKGM Parsel Yönetimi</image:title>
     </image:image>
   </url>
