@@ -3,7 +3,7 @@
         xmlns:image="[http://www.google.com/schemas/sitemap-image/1.1](http://www.google.com/schemas/sitemap-image/1.1)">
   <url>
     <loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)</loc>
-    <lastmod>2026-11-09T13:09:07.917Z</lastmod>
+    <lastmod>2026-11-09T19:56:39.037Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,12 +13,22 @@
   </url>
   <url>
     <loc>[https://buraktonoz.com/azimut/tanitim.html](https://buraktonoz.com/azimut/tanitim.html)</loc>
-    <lastmod>2026-11-09T13:09:07.917Z</lastmod>
+    <lastmod>2026-11-09T19:56:39.037Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>[https://buraktonoz.com/azimut/ek2.png](https://buraktonoz.com/azimut/ek2.png)</image:loc>
       <image:title>TKGM Tüm Parselleri Görme ve MAKS Sınır Çizimi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>[https://buraktonoz.com/azimut/tanitim.html?makale=](https://buraktonoz.com/azimut/tanitim.html?makale=)sahadan-aninda-a4-pdf-koordinat-ve-aplikasyon-raporu-tkgm-itrf96-ve-azimut--mfhm</loc>
+    <lastmod>2026-11-09T19:56:38.005Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:title>Sahadan Anında A4 PDF Koordinat ve Aplikasyon Raporu: TKGM, ITRF96 ve AZİMUT Pro ile Hızlı Çözümler</image:title>
     </image:image>
   </url>
   <url>
