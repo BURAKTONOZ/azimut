@@ -3,7 +3,7 @@
         xmlns:image="[http://www.google.com/schemas/sitemap-image/1.1](http://www.google.com/schemas/sitemap-image/1.1)">
   <url>
     <loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)</loc>
-    <lastmod>2026-11-10T12:50:19.304Z</lastmod>
+    <lastmod>2026-11-10T17:11:25.787Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>[https://buraktonoz.com/azimut/tanitim.html](https://buraktonoz.com/azimut/tanitim.html)</loc>
-    <lastmod>2026-11-10T12:50:19.304Z</lastmod>
+    <lastmod>2026-11-10T17:11:25.787Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -22,12 +22,22 @@
     </image:image>
   </url>
   <url>
+    <loc>[https://buraktonoz.com/azimut/tanitim.html?makale=](https://buraktonoz.com/azimut/tanitim.html?makale=)mahkeme-kesiflerinde-arazi-etudu-fen-bilirkisisi-oncesi-avukat-ve-taraflar--5sqm</loc>
+    <lastmod>2026-11-10T17:11:24.227Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:title>Mahkeme Keşiflerinde Arazi Etüdü: Fen Bilirkişisi Öncesi Avukat ve Taraflar İçin Kapsamlı Rehber - TKGM Parsel Sorgulama ve Aplikasyon Teknikleri</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>[https://buraktonoz.com/azimut/tanitim.html?makale=](https://buraktonoz.com/azimut/tanitim.html?makale=)santiyede-harita-ekibini-beklemeden-hizli-on-kontrol-tkgm-parsel-maks-ve-it-u00y</loc>
     <lastmod>2026-11-10T12:50:17.133Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Jgtk9dvcVLPv_zzA0sNLCZgvad_WkLeUOFFoYTFi5A&amp;s</image:loc>
       <image:title>Şantiyede Harita Ekibini Beklemeden Hızlı Ön Kontrol: TKGM Parsel, MAKS ve ITRF96 Aplikasyon Teknikleri</image:title>
     </image:image>
   </url>
@@ -37,7 +47,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_g3W-U49fk4Qc-9ZCRls2MCaoL_UWsZdt9gqu6towfNW2uOlv-1G4VkU&amp;s=10</image:loc>
       <image:title>Emlakçılar ve Arsa Yatırımcıları İçin Kelepir Arazi Analizi: TKGM Parsel Sorgulama, MAKS ve AZİMUT Pro ile Tek Ekranda Toplu Parsel Görüntüleme ve Saha Aplikasyonu Rehberi</image:title>
     </image:image>
   </url>
@@ -47,7 +57,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGX9U0Ix6AxKGlQa_NmuA7RqDEkqtNHDFbHUzavHZoGa55Zl27C-RXFDux&amp;s=10</image:loc>
       <image:title>Tecavüzlü Yapı Nedir? Parsel Sınır İhlallerinin TKGM ve Aplikasyon ile Sahada Tespiti: ITRF96, MAKS ve AZİMUT Pro Çözümleri</image:title>
     </image:image>
   </url>
@@ -57,7 +67,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5oQA2iRVIFMODvTVEDsNMLsesAroXnrxkYdx2rUHzO_27EwtAksRvWwUd&amp;s=10</image:loc>
       <image:title>Sahadan Anında A4 PDF Koordinat ve Aplikasyon Raporu: TKGM, ITRF96 ve AZİMUT Pro ile Hızlı Çözümler</image:title>
     </image:image>
   </url>
@@ -67,7 +77,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://www.finlisans.com/static/images/blog/gayrimenkul-degerleme-uzmani-nedir-uzman-rehberi/gayrimenkul-degerleme-uzmani-nedir-uzman-rehberi.webp</image:loc>
       <image:title>Gayrimenkul Değerleme Uzmanları İçin Mobil Saha Çözümleri: NetCAD, AutoCAD, KML ve Excel Dosyalarını Telefondan Açma, TKGM Parsel Sorgulama ve Hassas Aplikasyon Kolaylığı</image:title>
     </image:image>
   </url>
