@@ -3,7 +3,7 @@
         xmlns:image="[http://www.google.com/schemas/sitemap-image/1.1](http://www.google.com/schemas/sitemap-image/1.1)">
   <url>
     <loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)</loc>
-    <lastmod>2026-11-11T00:08:39.131Z</lastmod>
+    <lastmod>2026-11-11T11:59:42.053Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>[https://buraktonoz.com/azimut/tanitim.html](https://buraktonoz.com/azimut/tanitim.html)</loc>
-    <lastmod>2026-11-11T00:08:39.131Z</lastmod>
+    <lastmod>2026-11-11T11:59:42.053Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -22,12 +22,22 @@
     </image:image>
   </url>
   <url>
+    <loc>[https://buraktonoz.com/azimut/tanitim.html?makale=](https://buraktonoz.com/azimut/tanitim.html?makale=)arsa-emlakcilarinin-vazgecilmezi-arazide-gps-dogrulugunu-rms-ve-itrf96-ile--grsl</loc>
+    <lastmod>2026-11-11T11:59:40.757Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:title>Arsa Emlakçılarının Vazgeçilmezi: Arazide GPS Doğruluğunu RMS ve ITRF96 ile Maksimuma Çıkarma | TKGM Parsel Aplikasyonu</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>[https://buraktonoz.com/azimut/tanitim.html?makale=](https://buraktonoz.com/azimut/tanitim.html?makale=)ruzgar-erozyonu-ile-mucadelede-jeodezik-cozumler-ruzgar-kiran-agac-perdesi--2czn</loc>
     <lastmod>2026-11-11T00:08:37.981Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://insapedia.com/wp-content/uploads/2020/02/erozyon-nedir.jpg</image:loc>
       <image:title>Rüzgar Erozyonu ile Mücadelede Jeodezik Çözümler: Rüzgar Kıran (Ağaç Perdesi) Şeritlerinin Hakim Rüzgar Yönüne Dik Hassas Aplikasyonu ve AZİMUT Pro&apos;nun Rolü</image:title>
     </image:image>
   </url>
@@ -37,7 +47,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://img.piri.net/resim/imagecrop/2022/03/29/01/10/resized_1ca58-33cf3b903.jpg</image:loc>
       <image:title>Orman Mühendisleri ve Muhafaza Memurları İçin TKGM Parsel Sorgulama, ITRF96 Aplikasyon ve MAKS Entegrasyonu: AZİMUT Pro ile Canlı Kadastro Haritaları</image:title>
     </image:image>
   </url>
@@ -47,7 +57,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzpjA92Gz0DGXTi7AaPAuHMXv975O2gdCd_8oeZm1C_qDOEFWsABWdfuqt&amp;s=10</image:loc>
       <image:title>Mahkeme Keşiflerinde Arazi Etüdü: Fen Bilirkişisi Öncesi Avukat ve Taraflar İçin Kapsamlı Rehber - TKGM Parsel Sorgulama ve Aplikasyon Teknikleri</image:title>
     </image:image>
   </url>
