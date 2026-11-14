@@ -3,7 +3,7 @@
         xmlns:image="[http://www.google.com/schemas/sitemap-image/1.1](http://www.google.com/schemas/sitemap-image/1.1)">
   <url>
     <loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)</loc>
-    <lastmod>2026-11-14T11:39:01.976Z</lastmod>
+    <lastmod>2026-11-14T15:54:54.745Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,12 +13,22 @@
   </url>
   <url>
     <loc>[https://buraktonoz.com/azimut/tanitim.html](https://buraktonoz.com/azimut/tanitim.html)</loc>
-    <lastmod>2026-11-14T11:39:01.976Z</lastmod>
+    <lastmod>2026-11-14T15:54:54.745Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>[https://buraktonoz.com/azimut/ek2.png](https://buraktonoz.com/azimut/ek2.png)</image:loc>
       <image:title>TKGM Tüm Parselleri Görme ve MAKS Sınır Çizimi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>[https://buraktonoz.com/azimut/tanitim.html?makale=](https://buraktonoz.com/azimut/tanitim.html?makale=)ges-yatirimlarinda-marjinal-tarim-arazisi-ve-guney-baki-tespiti-itrf96-tkgm-6t4v</loc>
+    <lastmod>2026-11-14T15:54:53.331Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:title>GES Yatırımlarında Marjinal Tarım Arazisi ve Güney Bakı Tespiti: ITRF96, TKGM Parsel Sorgulama ve AZİMUT Pro ile Hassas Saha Aplikasyonu</image:title>
     </image:image>
   </url>
   <url>
