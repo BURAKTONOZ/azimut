@@ -3,7 +3,7 @@
         xmlns:image="[http://www.google.com/schemas/sitemap-image/1.1](http://www.google.com/schemas/sitemap-image/1.1)">
   <url>
     <loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)</loc>
-    <lastmod>2026-11-14T23:12:25.798Z</lastmod>
+    <lastmod>2026-11-15T12:06:41.734Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>[https://buraktonoz.com/azimut/tanitim.html](https://buraktonoz.com/azimut/tanitim.html)</loc>
-    <lastmod>2026-11-14T23:12:25.798Z</lastmod>
+    <lastmod>2026-11-15T12:06:41.734Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -22,12 +22,22 @@
     </image:image>
   </url>
   <url>
+    <loc>[https://buraktonoz.com/azimut/tanitim.html?makale=](https://buraktonoz.com/azimut/tanitim.html?makale=)gunes-enerjisi-santrali-ges-arazi-seciminde-tkgm-parsel-sorgulama-guney-bak-h6ia</loc>
+    <lastmod>2026-11-15T12:06:40.704Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:title>Güneş Enerjisi Santrali (GES) Arazi Seçiminde TKGM Parsel Sorgulama, Güney Bakı/Eğim Analizi ve ITRF96 Hassasiyeti: AZİMUT Pro ile Toplu Görüntüleme ve MAKS Entegrasyonu</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>[https://buraktonoz.com/azimut/tanitim.html?makale=](https://buraktonoz.com/azimut/tanitim.html?makale=)elektrik-direklerinde-aci-some-sapmalarinin-jeodezik-kontrolu-pusula-koordi-tgmz</loc>
     <lastmod>2026-11-14T23:12:24.723Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://png.pngtree.com/thumb_back/fh260/background/20230610/pngtree-an-electricity-pylon-in-a-storm-storm-background-image_2960982.jpg</image:loc>
       <image:title>Elektrik Direklerinde Açı (Some) Sapmalarının Jeodezik Kontrolü: Pusula, Koordinat ve AZİMUT Pro ile Hassas Saha Doğrulaması</image:title>
     </image:image>
   </url>
@@ -37,7 +47,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu9NW9U74rQA3RQBR_MJylL9sUm_o007gVTVW6Vl6-iSm2o_MNDQadX51C&amp;s=10</image:loc>
       <image:title>Kadastro ve Aplikasyon Projelerinde Koordinat Dosyası Hatalarına Son: Türkçe Karakter ve Ondalık Ayırıcı Çözümleriyle Veri Bütünlüğü ve AZİMUT Pro Entegrasyonu</image:title>
     </image:image>
   </url>
@@ -47,7 +57,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzMaKqYtmMY7Ntv34fzUJE_8WAmfPM9def1W-Xx1w1kBT2YCqwHGYHENC3&amp;s=10</image:loc>
       <image:title>GES Yatırımlarında Marjinal Tarım Arazisi ve Güney Bakı Tespiti: ITRF96, TKGM Parsel Sorgulama ve AZİMUT Pro ile Hassas Saha Aplikasyonu</image:title>
     </image:image>
   </url>
@@ -57,7 +67,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGidNESVBS7rhh0DEznz51VCf4vDhLgMKIo1nl3pSCys4_6SOD9Iz-hgiT&amp;s=10</image:loc>
       <image:title>Heyelan ve Şev Stabilitesi Projelerinde İnklino Kuyu ve Fore Kazık Aplikasyonu: TKGM, MAKS ve AZİMUT Pro ile Hassas Jeodezik Çözümler</image:title>
     </image:image>
   </url>
@@ -67,7 +77,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRct6owZHRa2KeNlvmnojJdGHSqMdcnnraY_HkDWROwNrVub9rMs7D_gz4&amp;s=10</image:loc>
       <image:title>Maden ve Taş Ocağı Ruhsat Sınırı Aplikasyonu: İR/İŞ Noktalarının Araziye Hassas Aktarımı ve Emniyet Şeridi Yönetimi ile TKGM ve ITRF96 Entegrasyonu</image:title>
     </image:image>
   </url>
@@ -77,7 +87,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXuyo1sEqWmedMgxeLQP0ORXKGAogOh7UYLFTTmxKoGmmLLeBIFxdvw3Tc&amp;s=10</image:loc>
       <image:title>Atıksu Deşarj Noktası ve Alıcı Ortam Numune Sabitleme: Hassas GPS, ITRF96, Aplikasyon ve AZİMUT Pro Entegrasyonu</image:title>
     </image:image>
   </url>
@@ -87,7 +97,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGahGpRcRWo4qGpv0KqyVf0ERnoKAPD64fdtVZ9IRt5A&amp;s=10</image:loc>
       <image:title>Mimarlar ve Peyzaj Mimarları İçin Cep Telefonuyla ITRF96 ve ED50 Koordinat Dönüşümü: TKGM Parsel Aplikasyonu ve Saha Nokta Bulma Rehberi</image:title>
     </image:image>
   </url>
@@ -97,7 +107,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9by7-1kE1cRV3b6zHHpQqfzwXzZyM1a4buMYhX76MingoJjyExLl7Iao&amp;s=10</image:loc>
       <image:title>Taşkın Koruma ve Dere Islah Projelerinde Sedde, Tahkimat Aplikasyonu: ITRF96, TKGM Parsel Sorgulama ve MAKS Verileriyle Hassas Sınır Belirleme</image:title>
     </image:image>
   </url>
@@ -107,7 +117,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ_B17bg6Y7PL9-95XnhzWF--J8uolckk_5oNexHeGPEeZfFN263qBOvjL&amp;s=10</image:loc>
       <image:title>Akıllı Telefonlarda Çift Frekanslı (L1+L5) GNSS Devrimi: Haritacılıkta TKGM, Aplikasyon ve ITRF96 Hassasiyeti</image:title>
     </image:image>
   </url>
@@ -117,7 +127,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Ce9_SwnidrnE1lpb5AZ2xxgMK3cdEM6ofda_cbmbv0_X_GSDXXQGs0A&amp;s=10</image:loc>
       <image:title>Şehir ve Bölge Plancıları İçin MAKS Verileri: Mahalle Sınırı, Cadde ve Sokakları Haritada Çizdirme Rehberi - TKGM Parsel, ITRF96 ve AZİMUT Pro Entegrasyonu</image:title>
     </image:image>
   </url>
@@ -127,7 +137,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX1-FDuInjJQoiPVRAZIHaZDiSlGbCcgo66dUe7W-c1mArYAVeJNC-sA4&amp;s=10</image:loc>
       <image:title>Havalimanı Radar ve Seyrüsefer Anten Kuleleri Aplikasyonu: ITRF96 Hassasiyeti ile Jeodezik Çözümler ve AZİMUT Pro</image:title>
     </image:image>
   </url>
@@ -137,7 +147,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://play-lh.googleusercontent.com/zjN_GuwdSj871ccXeZixgXRXaOh-Bkjw9mpQy24UlXOEu7zlxTRLvHT4SjtwsZYcNN4ojJieNw720iPndrhHkYA</image:loc>
       <image:title>TKGM Parsel Sorgulama ile Arsa, Tarla, Bahçe Yatırımcıları İçin Cep Telefonuyla ITRF96/ED50 Koordinat Dönüşümü ve Saha Aplikasyonu: AZİMUT Pro Rehberi</image:title>
     </image:image>
   </url>
@@ -147,7 +157,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpW67JcLhGsDiIQbuN94oNWaCW9o9AmgslD0SaMHul43-fVFs9aS--zBoF&amp;s=10</image:loc>
       <image:title>Belediye Fen İşleri ve İmar Müdürlükleri İçin TKGM Parsel, ITRF96 Aplikasyon ve MAKS Verileriyle Tek Tıkla Resmi A4 Koordinat Raporu Oluşturma</image:title>
     </image:image>
   </url>
@@ -157,7 +167,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://boluhedef.com/fotolar/haber/haber-20250212131920-765144.jpg</image:loc>
       <image:title>Mera, Yaylak ve Kışlak Sınırlarının Tarım Arazileriyle Komşuluk İlişkisi: TKGM Parsel Sorgulama ve AZİMUT Pro ile Kesin Çözüm</image:title>
     </image:image>
   </url>
@@ -167,7 +177,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://emsal.com/wp-content/uploads/2023/12/depo-alani.jpg</image:loc>
       <image:title>Sanayi ve Depolama Parsellerinde Tır Yanaşma ve Cephe Genişliği Ölçümü: TKGM, Aplikasyon ve AZİMUT Pro ile Hassas Çözümler</image:title>
     </image:image>
   </url>
@@ -177,7 +187,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVNfez6oSy5YpJzJL2GqiucM0UFqA9jsggdERv2r1NdiqZOMzE05SAwEA&amp;s=10</image:loc>
       <image:title>Arsa Emlakçılarının Vazgeçilmezi: Arazide GPS Doğruluğunu RMS ve ITRF96 ile Maksimuma Çıkarma | TKGM Parsel Aplikasyonu</image:title>
     </image:image>
   </url>
