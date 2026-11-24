@@ -3,7 +3,7 @@
         xmlns:image="[http://www.google.com/schemas/sitemap-image/1.1](http://www.google.com/schemas/sitemap-image/1.1)">
   <url>
     <loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)</loc>
-    <lastmod>2026-11-24T04:21:37.332Z</lastmod>
+    <lastmod>2026-11-24T15:03:01.585Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,12 +13,22 @@
   </url>
   <url>
     <loc>[https://buraktonoz.com/azimut/tanitim.html](https://buraktonoz.com/azimut/tanitim.html)</loc>
-    <lastmod>2026-11-24T04:21:37.332Z</lastmod>
+    <lastmod>2026-11-24T15:03:01.585Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>[https://buraktonoz.com/azimut/ek2.png](https://buraktonoz.com/azimut/ek2.png)</image:loc>
       <image:title>TKGM Tüm Parselleri Görme ve MAKS Sınır Çizimi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>[https://buraktonoz.com/azimut/tanitim.html?makale=](https://buraktonoz.com/azimut/tanitim.html?makale=)harita-muhendisliginde-itrf96-ve-ed50-koordinat-donusumlerinde-dom-dilim-or-ql8a</loc>
+    <lastmod>2026-11-24T15:02:59.614Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:title>Harita Mühendisliğinde ITRF96 ve ED50 Koordinat Dönüşümlerinde DOM (Dilim Orta Meridyeni) Seçimi: TKGM Parsel, Aplikasyon ve MAKS Entegrasyonu</image:title>
     </image:image>
   </url>
   <url>
