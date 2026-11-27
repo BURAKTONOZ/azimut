@@ -3,7 +3,7 @@
         xmlns:image="[http://www.google.com/schemas/sitemap-image/1.1](http://www.google.com/schemas/sitemap-image/1.1)">
   <url>
     <loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)</loc>
-    <lastmod>2026-11-27T19:06:04.774Z</lastmod>
+    <lastmod>2026-11-27T22:52:09.982Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,12 +13,22 @@
   </url>
   <url>
     <loc>[https://buraktonoz.com/azimut/tanitim.html](https://buraktonoz.com/azimut/tanitim.html)</loc>
-    <lastmod>2026-11-27T19:06:04.774Z</lastmod>
+    <lastmod>2026-11-27T22:52:09.982Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>[https://buraktonoz.com/azimut/ek2.png](https://buraktonoz.com/azimut/ek2.png)</image:loc>
       <image:title>TKGM Tüm Parselleri Görme ve MAKS Sınır Çizimi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>[https://buraktonoz.com/azimut/tanitim.html?makale=](https://buraktonoz.com/azimut/tanitim.html?makale=)tarimsal-sulama-ges-projelerinde-kablo-mesafesi-olcumu-tkgm-parsel-itrf96-v-th6e</loc>
+    <lastmod>2026-11-27T22:52:08.647Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>[https://buraktonoz.com/azimut/](https://buraktonoz.com/azimut/)[https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?auto=format&amp;fit=crop&amp;w=1000&amp;q=80](https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?auto=format&amp;fit=crop&amp;w=1000&amp;q=80)</image:loc>
+      <image:title>Tarımsal Sulama GES Projelerinde Kablo Mesafesi Ölçümü: TKGM Parsel, ITRF96 ve AZİMUT Pro ile Hassas Harita ve Saha Aplikasyonu Rehberi</image:title>
     </image:image>
   </url>
   <url>
